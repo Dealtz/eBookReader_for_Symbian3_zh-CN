@@ -1,7 +1,7 @@
 # eBookReader for Symbian^3 zh-CN
+[English](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/README.md) 简体中文   
 ![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Entry01.png)   
 eBookReader汉化版   
-[English](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/README.md) 简体中文   
 官网: https://ebookreader.abcreiseonline.de/?q=reader   
 [![Ovi Store](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_024.jpg)](http://symbian.oms.apps.bemobi.com/zh_cn/ebookreader.html)
 [![AppList](https://applist.schumi1331.de/images/badge.png)](https://applist.schumi1331.de/content/82)   
@@ -23,11 +23,11 @@ You can also use the express - import function (menu->import->express import->im
 A long press on the ebook record in the library, then "Delete".   
 If you want to immediately delete all readed books from the library, go to the edit mode. Then in menu choose "Select all finished books" , after this "Delete selected books".
 ## 截图
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia_screenshot_2016-07-01_23-19-18.png)   
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia_screenshot_2016-07-01_23-26-31.png)   
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia_screenshot_2016-07-01_23-26-53.png)   
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia_screenshot_2016-07-01_23-30-05.png)   
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia_screenshot_2016-07-01_23-30-25.png)   
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia_screenshot_2016-07-01_23-19-18.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia_screenshot_2016-07-01_23-26-31.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia_screenshot_2016-07-01_23-26-53.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia_screenshot_2016-07-01_23-30-05.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia_screenshot_2016-07-01_23-30-25.png)
 ## 久店(9Smart Store)应用详情备份
 ### 应用详情
 操作系统：Symbian^3   

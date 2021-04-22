@@ -1,7 +1,7 @@
 # eBookReader for Symbian^3 zh-CN
+English [简体中文](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/README_zh-CN.md) 
 ![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Entry01.png)   
-eBookReader's Simplified Chinese version   
-English [简体中文](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/README_zh-CN.md)   
+eBookReader's Simplified Chinese version     
 Official Site: https://ebookreader.abcreiseonline.de/?q=reader   
 [![Ovi Store](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_024.jpg)](http://symbian.oms.apps.bemobi.com/zh_cn/ebookreader.html)
 [![AppList](https://applist.schumi1331.de/images/badge.png)](https://applist.schumi1331.de/content/82)   
@@ -23,18 +23,18 @@ You can also use the express - import function (menu->import->express import->im
 A long press on the ebook record in the library, then "Delete".   
 If you want to immediately delete all readed books from the library, go to the edit mode. Then in menu choose "Select all finished books" , after this "Delete selected books".
 ## Screenshots
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_027.jpg)
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_018.jpg)
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_012.jpg)
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_028.jpg)
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_010.jpg)
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_001.jpg)
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_007.jpg)
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_023.jpg)
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_006.jpg)
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_030.jpg)
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_013.jpg)
-![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_017.jpg)   
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_027.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_018.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_012.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_028.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_010.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_001.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_007.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_023.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_006.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_030.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_013.png)
+![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_017.png)   
 ## About this repository
 Release the Simplified Chinese version on 2016/07/01.   
 The version provided was modified by Dealtz.    
