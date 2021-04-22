@@ -473,7 +473,7 @@ Page {
                 onClicked: gotoPage(1)
             }
             MenuItem {
-                text: "末页"
+                text: "尾页"
                 onClicked: gotoPage(browser.pageCount)
             }
             MenuItem {

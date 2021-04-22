@@ -99,7 +99,7 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true            
-            text: "提示: 只记录总长度小于600字符的文段。"
+            text: "警告: 只记录总长度小于600字符的文段。"
                                         +" 可以显示在弹窗中，但图片无法显示，只显示一个简单的文本。"
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
@@ -112,7 +112,7 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true            
-            text: "提示: 当从书库删除一本书时，将会从手机中删除原文件(epub, fb2, zip)。"
+            text: "提示: 当从书库删除一本书时，将会从手机中删除源文件(epub, fb2, zip)。"
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -124,8 +124,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true
-            text: "提示: 你可以快速添加书籍(扫描zip文件)。"
-                       + " 然而, 并不是所有的书籍都能添加，如果是只读属性的ePub文件,可以取消选中。"
+            text: "提示: 你可以排除压缩(zip)文件来加速快速添加。"
+                       + " 然而, 并不是所有的书籍都能添加，如果你只阅读ePub电子书,可以取消选中此选项。"
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -137,7 +137,7 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true            
-            text: "提示: 设置将在重启eBookReader后生效。"
+            text: "警告: 设置将在重启eBookReader后生效。"
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         visible: false
@@ -241,11 +241,11 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: "删除选项"
+                        text: "书库设置"
                     }
                     CheckBox{
                         id: cbDeleteSourceFile
-                        text: "删除原文件(epub, fb2, zip)"
+                        text: "删除原始文件(epub, fb2, zip)"
                         anchors.topMargin: platformStyle.paddingMedium
                         checked: op_delSourceFile
                         onClicked: {op_delSourceFile = !op_delSourceFile;}

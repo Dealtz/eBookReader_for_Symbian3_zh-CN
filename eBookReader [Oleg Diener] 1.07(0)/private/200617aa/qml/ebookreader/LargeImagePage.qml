@@ -155,7 +155,7 @@ Page {
                 }
             }
             MenuItem {
-                text: "使用白天模式"
+                text: "使用日间模式"
                 onClicked: {
                     imageBG.color = optionsObj.backgroundColor2;
                     OPTIONS.imageBackgroundColor = optionsObj.backgroundColor2

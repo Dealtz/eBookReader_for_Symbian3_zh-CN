@@ -224,7 +224,7 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: "按书本作者分组"
+                text: "按书籍作者分组"
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "author";
@@ -234,7 +234,7 @@ Page {
                 }
             }
             MenuItem {
-                text: "按书本标题分组"
+                text: "按书籍标题分组"
                 onClicked: {
                     lw.section.criteria = ViewSection.FirstCharacter;
                     lw.section.property = "name";
@@ -244,7 +244,7 @@ Page {
                 }
             }
             MenuItem {
-                text: "按书本类别分组"
+                text: "按书籍类别分组"
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "genre";
@@ -264,7 +264,7 @@ Page {
                 }
             }
             MenuItem {
-                text: "按阅读状态分组"
+                text: "按书籍状态分组"
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "status";
@@ -305,7 +305,7 @@ Page {
                 }
             }
             MenuItem {
-                text: "关于指南"
+                text: "帮助信息"
                 onClicked: viewInfoPage()
             }
            MenuItem {

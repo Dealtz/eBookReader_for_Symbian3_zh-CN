@@ -12,7 +12,7 @@ MyDialog {
     property bool expImportFinished;
     property string expImportFinishedEndText;
 
-    titleText: expressImport?"快速添加":"正在添加"
+    titleText: expressImport?"快速添加":"添加书籍"
     closeAllowed: expressImport?false:true;
     privateCloseIcon: (!importOk) || (expressImport)
     onCloseButtonClicked: closeButtonClicked();
@@ -20,7 +20,7 @@ MyDialog {
     function closeButtonClicked()
     {
         if(dialog.expressImport){            
-            dialog.errorText = "请稍等";
+            dialog.errorText = "请稍等...";
             dialog.importOk = false;
             bookImporter.cancelImport();
         }

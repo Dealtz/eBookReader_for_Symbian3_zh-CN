@@ -100,15 +100,15 @@ Page {
             onClicked: {
                 if (isHelpViewed) {
                     tabGroup.currentTab = tab1content;
-                    text = "用户指南";
+                    text = "帮助";
                     isHelpViewed = false;
                 }else{
                     tabGroup.currentTab = tab2content;
-                    text = "关于程序";
+                    text = "关于";
                     isHelpViewed = true;
                 }
             }
-            text: "用户指南"
+            text: "帮助"
             anchors.right: parent.right
             anchors.rightMargin: 2
         }

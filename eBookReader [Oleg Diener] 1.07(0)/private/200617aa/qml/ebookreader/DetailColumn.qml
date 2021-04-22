@@ -59,7 +59,7 @@ Column {
 
     MySelectionItem {
         id: item
-        title: "本书状态"
+        title: "书籍状态"
         width: parent.width
         subTitle: selectionDialog.selectedIndex >= 0
                   ? bookEntry.getStatusText(selectionDialog.selectedIndex)
@@ -69,14 +69,14 @@ Column {
 
         SelectionDialog {
             id: selectionDialog
-            titleText: "本书状态"
+            titleText: "书籍状态"
             model: statusModel
             selectedIndex: bookEntry.status
         }
     }
 
     BookText {
-        text: "目录: " + bookEntry.fileName
+        text: "文件名: " + bookEntry.fileName
         width: parent.width
         clip: true
         elide: Text.ElideMiddle

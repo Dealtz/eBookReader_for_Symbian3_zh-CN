@@ -48,8 +48,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true
-            text: "从手机中选择一个文件，该文件将被转换为ebr文件保存在设置的路径中。"
-                       +"添加完成后，你可以删除原文件(epub, fb2, zip)来释放磁盘空间(不推荐删除原文件)。";
+            text: "从手机中选择一个文件，该文件将被完整导入并转换为ebr文件保存在设置的路径中。"
+                       +"添加完成后，你可以删除源文件(epub, fb2, zip)来释放磁盘空间(不推荐删除源文件)。";
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -62,7 +62,7 @@ Page {
             horizontalAlignment: Text.AlignJustify
             clip: true
             text: "扫描手机或选择的目录，快速搜索并添加书籍。"
-                       +" 只有书本信息被导入，在书名后会用符号\"<img src=\":/img/tb_sync\" width=16 heigth=16 />\"来标记。打开书本时将会继续完成全部内容的导入。";
+                       +" 只有书籍元数据被导入，在书名后会用符号\"<img src=\":/img/tb_sync\" width=16 heigth=16 />\"来标记。打开书籍时将会继续完成全部内容的导入。";
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -75,7 +75,7 @@ Page {
             horizontalAlignment: Text.AlignJustify
             clip: true
             text: "提示: 从网页上下载的文件不能自动添加到书库中。"
-                       +"您需要使用 \"快速添加\" 或 \"添加文件\"将书本手动添加到书库 。";
+                       +"您需要使用 \"快速添加\" 或 \"添加文件\"将书籍手动添加到书库 。";
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         visible: false
@@ -97,10 +97,10 @@ Page {
     QueryDialog{
         id: msg1
         acceptButtonText: "确认"
-        message: "所有书籍的交易都是在您和销售方之间进行的。"
-                      + " eBookReader并不参与您购买书籍的过程，购买书籍有关的任何问题请向您选择的网站咨询。"
-                      +" eBookReader只是一个本地的电子书阅读器。"
-        titleText: "提示"
+        message: "所有书籍的交易都是在您和书籍销售方之间进行的。"
+                      + " eBookReader并不参与您购买书籍的过程，购买书籍有关的任何问题请向您购买书籍的网站咨询。"
+                      +" 请务必仔细检查您获取的所有书籍能否适用于您的电子书阅读器。"
+        titleText: "警告"
         onButtonClicked: {
             bookImporter.searchInWeb();
         }

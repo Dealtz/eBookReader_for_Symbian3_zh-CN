@@ -264,7 +264,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: "夜间模式"
+                        text: "夜间模式配色"
                     }
                     Rectangle{
                         anchors.topMargin: platformStyle.paddingMedium
@@ -291,7 +291,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: "日间模式"
+                        text: "日间模式配色"
                     }
                     Rectangle{
                         anchors.topMargin: platformStyle.paddingMedium
@@ -332,7 +332,7 @@ Page {
                             elide: Text.ElideMiddle
                             text: {
                                 switch(op_textAlign){
-                                case 1: return "两端对齐";
+                                case 1: return "居中";
                                 case 2: return "右对齐";
                                 default: return "左对齐"
                                 }
@@ -351,7 +351,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: "ebr文件保存目录"
+                        text: "已导入书籍的ebr文件保存目录"
                     }
                     Rectangle{
                         anchors.topMargin: platformStyle.paddingMedium
