@@ -203,7 +203,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Font family")
+                        text: "选择字体"
                     }
                     Rectangle{
                         anchors.topMargin: platformStyle.paddingMedium
@@ -230,7 +230,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Font size")
+                        text: "字体大小"
                     }
                     Rectangle{
                         anchors.topMargin: platformStyle.paddingMedium
@@ -248,7 +248,7 @@ Page {
                     }
                     CheckBox{
                         id: fontstyle
-                        text: qsTr("Use bold style")
+                        text: "使用粗体风格"
                         anchors.topMargin: platformStyle.paddingMedium
                         checked: op_textBold
                         onClicked: {op_textBold = !op_textBold;}
@@ -264,7 +264,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Colors in the dark")
+                        text: "夜间模式"
                     }
                     Rectangle{
                         anchors.topMargin: platformStyle.paddingMedium
@@ -276,7 +276,7 @@ Page {
                             anchors.centerIn: parent
                             anchors.leftMargin: 10
                             elide: Text.ElideMiddle
-                            text: qsTr("Sample text")
+                            text: "示例文本"
                             color: Qt.lighter(optionsPage.op_fontColor1, optionsPage.op_brightness1 / 100)
                         }
                     }
@@ -291,7 +291,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Colors in daylight")
+                        text: "日间模式"
                     }
                     Rectangle{
                         anchors.topMargin: platformStyle.paddingMedium
@@ -303,7 +303,7 @@ Page {
                             anchors.centerIn: parent
                             anchors.leftMargin: 10
                             elide: Text.ElideMiddle
-                            text: qsTr("Sample text")
+                            text: "示例文本"
                             color: Qt.lighter(optionsPage.op_fontColor2, optionsPage.op_brightness2 / 100)
                         }
                     }
@@ -318,7 +318,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Text alignment")
+                        text: "文本对齐"
                     }
                     Rectangle{
                         anchors.topMargin: platformStyle.paddingMedium
@@ -332,9 +332,9 @@ Page {
                             elide: Text.ElideMiddle
                             text: {
                                 switch(op_textAlign){
-                                case 1: return qsTr("justify");
-                                case 2: return qsTr("right-aligned");
-                                default: return qsTr("left-aligned")
+                                case 1: return "两端对齐";
+                                case 2: return "右对齐";
+                                default: return "左对齐"
                                 }
                             }
                             color: platformStyle.colorNormalMid
@@ -351,7 +351,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Directory for imported books")
+                        text: "ebr文件保存目录"
                     }
                     Rectangle{
                         anchors.topMargin: platformStyle.paddingMedium
@@ -373,7 +373,7 @@ Page {
                 mode: "normal"
                 role: "Title"
                 visible: _typ === 8
-                text: qsTr("More options")
+                text: "更多选项"
                 anchors.fill: parent.paddingItem
             }
         }
@@ -381,7 +381,7 @@ Page {
 
     SelectionDialog {
         id: selectionDialog
-        titleText: qsTr("Text alignment")
+        titleText: "文本对齐"
         model: textAlignmentModel
         selectedIndex: op_textAlign
         onSelectedIndexChanged: op_textAlign = selectionDialog.selectedIndex
@@ -405,19 +405,17 @@ Page {
         ToolButton {
             iconSource: "toolbar-back"
             onClicked: pageStack.pop();
-            flat: false
         }
         ToolButton {
             iconSource: "qrc:/img/tb_ok"
             onClicked: saveOptions();
-            flat: false
         }
     }
     onStatusChanged: {
         if(status === PageStatus.Active){
             listView.focus = true;
             window.state = "";
-            statusBarText.text = qsTr("Settings");
+            statusBarText.text = "设置";
         }
     }
     onFocusChanged: {

@@ -26,10 +26,11 @@ Page {
             anchors.bottomMargin: 4
             font.bold: true
             color: "white"
+            z:5
         }
     }
     //![0]
-
+    
     Flickable {
         id: flickable
 
@@ -104,7 +105,7 @@ Page {
     //![2]
 
     Text {
-        text: qsTr("Image Unavailable")
+        text: "图片打开失败"
         visible: image.status == Image.Error
         anchors.centerIn: parent
         color: "red"
@@ -133,28 +134,28 @@ Page {
         id: backgroundMenu
         content: MenuLayout {
             MenuItem {
-                text: qsTr("Black")
+                text: "使用黑色背景"
                 onClicked: {
                     imageBG.color = "black";
                     OPTIONS.imageBackgroundColor = "black";
                 }
             }
             MenuItem {
-                text: qsTr("White")
+                text: "使用白色背景"
                 onClicked: {
                     imageBG.color = "white";
                     OPTIONS.imageBackgroundColor = "white";
                 }
             }
             MenuItem {
-                text: qsTr("Use from the dark theme")
+                text: "使用夜间模式"
                 onClicked: {
                     imageBG.color = optionsObj.backgroundColor1;
                     OPTIONS.imageBackgroundColor = optionsObj.backgroundColor1
                 }
             }
             MenuItem {
-                text: qsTr("Use from the daylight theme")
+                text: "使用白天模式"
                 onClicked: {
                     imageBG.color = optionsObj.backgroundColor2;
                     OPTIONS.imageBackgroundColor = optionsObj.backgroundColor2
@@ -166,11 +167,10 @@ Page {
         ToolButton {
             iconSource: "toolbar-back"
             onClicked: pageStack.pop();
-            flat: false
         }
         ToolButton {
             iconSource: "qrc:/img/tb_personalise"
-            text: qsTr("Background")
+            text: "背景"
             onClicked: backgroundMenu.open();
             anchors.right: parent.right
             anchors.rightMargin: 3

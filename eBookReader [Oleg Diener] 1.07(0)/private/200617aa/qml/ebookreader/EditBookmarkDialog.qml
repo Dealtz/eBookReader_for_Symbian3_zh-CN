@@ -15,7 +15,7 @@ Page {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
         visible: bookmarkModel.isEmpty
-        text: qsTr("No bookmarks")
+        text: "无书签"
     }
 
     CopyBookmarkModel{
@@ -37,7 +37,7 @@ Page {
 
     onStatusChanged: {
         if(status === PageStatus.Active){
-            statusBarText.text = qsTr("Bookmarks");
+            statusBarText.text = "书签";
             listView.focus = true;
         }
     }
@@ -50,7 +50,6 @@ Page {
         ToolButton {
             iconSource: "toolbar-back"
             onClicked: pageStack.pop();
-            flat: false
         }
         ToolButton {
             iconSource: "qrc:/img/tb_ok"
@@ -58,7 +57,6 @@ Page {
                 copyBookmarkModel.save();
                 pageStack.pop();
             }
-            flat: false
         }
     }
     Component.onCompleted: copyBookmarkModel.load();

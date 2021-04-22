@@ -4,7 +4,7 @@ import com.nokia.symbian 1.1
 CommonDialog {
     id: root
     property int selectedIndex: -1
-    titleText: qsTr("Goto bookmark")
+    titleText: "查看书签"
     buttons: []
     privateCloseIcon: true
     height: parent.height
@@ -17,7 +17,7 @@ CommonDialog {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
                 visible: bookmarkModel.isEmpty
-                text: qsTr("No bookmarks")
+                text: "无书签"
             }
 
         ListView {
@@ -33,7 +33,7 @@ CommonDialog {
                 }                
                 ListItemText {
                     anchors.verticalCenter: parent.paddingItem.verticalCenter
-                    role: "SubTitle"
+                    role: "Sub Title"
                     text: "  " + bookmarkId + ". " + name
                     clip: true
                     width: parent.paddingItem.width

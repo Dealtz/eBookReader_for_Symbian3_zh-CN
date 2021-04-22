@@ -13,7 +13,7 @@ Page {
 
     onStatusChanged: {
         if(status === PageStatus.Active)
-            statusBarText.text = qsTr("Details");
+            statusBarText.text = "详情";
     }
 
     function saveDetails()
@@ -30,7 +30,6 @@ Page {
                 bookEntry.revert();
                 pageStack.pop();
             }
-            flat: false
         }
         ToolButton {
             iconSource: "qrc:/img/tb_ok"
@@ -38,7 +37,6 @@ Page {
                 saveDetails();
                 pageStack.pop();
             }
-            flat: false
         }
     }
 

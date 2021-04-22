@@ -6,7 +6,7 @@ CommonDialog {
     property int selectedIndex: -1
     signal gotoChapter( int selIdx )
 
-    titleText: qsTr("Index page")
+    titleText: "目录"
     buttons: []
     privateCloseIcon: true
     height: parent.height
