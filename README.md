@@ -1,10 +1,10 @@
 # eBookReader for Symbian^3 zh-CN
-English [简体中文](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/README_zh-CN.md) 
+English [简体中文](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/README_zh-CN.md)   
 ![image](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Entry01.png)   
 eBookReader's Simplified Chinese version     
 Official Site: https://ebookreader.abcreiseonline.de/?q=reader   
 [![Ovi Store](https://github.com/Dealtz/eBookReader_for_Symbian3_zh-CN/blob/master/Screenshots/Nokia%20N8-00_024.jpg)](http://symbian.oms.apps.bemobi.com/zh_cn/ebookreader.html)
-[![AppList](https://applist.schumi1331.de/images/badge.png)](https://applist.schumi1331.de/content/82)   
+[![AppList](https://applist.schumi1331.de/images/badge.png)](https://applist.schumi1331.de/content/82)  
 ## Description
 eBookReader is a powerful and flexible application developed by ArtSoftic for reading eBooks on Symbian^3 devices, in formats EPUB (non DRM), FB2 (.ZIP). The natural look &amp; feel and the intuitive user interface will engage you in an exceptional experience. In addition, the application is packed with follow the features you may need ( epub and fb2 import, bookmarks, library, hyperlinks, image viewer, etc.). Automatic encoding detection, table contents is supported too.
 ## FAQ
