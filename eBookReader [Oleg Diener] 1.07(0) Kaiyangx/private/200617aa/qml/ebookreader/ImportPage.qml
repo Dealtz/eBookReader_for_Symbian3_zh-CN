@@ -48,8 +48,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true
-            text: qsTr("Select a file in the mobile phone. The selected file will be completely imported."
-                       +" After the import is complete, you can delete the source file to increase the storage space on a disk.");
+            text: qsTr("从手机中选择一个文件. 该文件将被完全添加。"
+                       +" 添加完成后，你可以删除原文件来释放磁盘空间。");
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -61,8 +61,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true
-            text: qsTr("Books are searched and imported from the mobile phone or selected directory."
-                       +" Only meta data will be imported, the full import will launched by the first opening of book.");
+            text: qsTr("从手机或选择的目录中搜索和添加书籍。"
+                       +" 只有原数据将被导入，初次打开书本时全部导入。");
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -74,8 +74,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true
-            text: qsTr("Note: The files loaded from the Web aren't added automatically to the library."
-                       +" For the solution of this problem, use the \"Express import\" or \"Import from file\".");
+            text: qsTr("注意: 从文件加载的网页不能自动添加到书库中。"
+                       +" 为解决这一问题，请用 \"快速添加\" 或 \"从文件夹添加\" 。");
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         visible: false
@@ -85,22 +85,22 @@ Page {
         id: importExpressMenu
         MenuLayout {
             MenuItem {
-                text: qsTr("Import from a selected directory")
+                text: qsTr("从选择目录中添加")
                 onClicked: startExpressImport(true);
             }
             MenuItem {
-                text: qsTr("Import from the mobile phone")
+                text: qsTr("从手机中添加")
                 onClicked: startExpressImport(false);
             }
         }
     }
     QueryDialog{
         id: msg1
-        acceptButtonText: "Ok"
-        message: qsTr("All transactions (paid or otherwise) are handled between you and the book seller."
-                      + " eBookReader is not part of this process and any issues related to a purchase should be directed to the website you are buying from."
-                      +" Be sure to double check that any books you get will work your e-book reader.")
-        titleText: qsTr("Warning")
+        acceptButtonText: "确认"
+        message: qsTr("所有的交易(支付或其他)处理你和销售方的书籍。"
+                      + " eBookReader并非是这个过程中的一部分，购买书籍有关的任何问题要向你购买的网站。"
+                      +" 仔细检查你的电子书阅读器。")
+        titleText: qsTr("警告")
         onButtonClicked: {
             bookImporter.searchInWeb();
         }
@@ -135,7 +135,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Import from file")
+                        text: qsTr("从文件夹中添加")
                     }
                     BookText {                        
                         anchors.topMargin: platformStyle.paddingMedium
@@ -160,7 +160,7 @@ Page {
                         id: titleItemText
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Express import")
+                        text: qsTr("快速添加")
                     }
                     BookText {
                         anchors.topMargin: platformStyle.paddingMedium
@@ -184,7 +184,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Look for on the Web")
+                        text: qsTr("访问官网")
                     }
                     BookText {
                         anchors.topMargin: platformStyle.paddingMedium

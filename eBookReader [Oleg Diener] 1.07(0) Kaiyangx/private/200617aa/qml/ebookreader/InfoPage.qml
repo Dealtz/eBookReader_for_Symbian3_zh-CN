@@ -102,15 +102,15 @@ Page {
             onClicked: {
                 if (isHelpViewed) {
                     tabGroup.currentTab = tab1content;
-                    text = qsTr("    Help    ");
+                    text = qsTr("    用户指南    ");
                     isHelpViewed = false;
                 }else{
                     tabGroup.currentTab = tab2content;
-                    text = qsTr("About ...");
+                    text = qsTr("关于程序");
                     isHelpViewed = true;
                 }
             }
-            text: qsTr("    Help    ")
+            text: qsTr("    用户指南    ")
             anchors.right: parent.right
             anchors.rightMargin: 2
         }

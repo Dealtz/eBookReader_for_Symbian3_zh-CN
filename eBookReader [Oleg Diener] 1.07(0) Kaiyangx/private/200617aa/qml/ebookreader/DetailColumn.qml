@@ -22,7 +22,7 @@ Column {
     ListItemText {
         mode: "normal"
         role: "Title"
-        text: qsTr("Title")
+        text: qsTr("标题")
     }
     TextField{
         id: titleTextField
@@ -35,7 +35,7 @@ Column {
         id: txF1
         mode: "normal"
         role: "Title"
-        text: qsTr("Author")
+        text: qsTr("作者")
     }
     TextField{
         id: authorTextField
@@ -47,7 +47,7 @@ Column {
     ListItemText {
         mode: "normal"
         role: "Title"
-        text: qsTr("Genre")
+        text: qsTr("类型")
     }
     TextField{
         id: genreTextField
@@ -59,36 +59,36 @@ Column {
 
     MySelectionItem {
         id: item
-        title: qsTr("Status of the book")
+        title: qsTr("本书状态")
         width: parent.width
         subTitle: selectionDialog.selectedIndex >= 0
                   ? bookEntry.getStatusText(selectionDialog.selectedIndex)
-                  : "Please select"
+                  : "请选择"
 
         onClicked: selectionDialog.open()
 
         SelectionDialog {
             id: selectionDialog
-            titleText: qsTr("Status of the book")
+            titleText: qsTr("本书状态")
             model: statusModel
             selectedIndex: bookEntry.status
         }
     }
 
     BookText {
-        text: qsTr("file: ") + bookEntry.fileName
+        text: qsTr("文件: ") + bookEntry.fileName
         width: parent.width
         clip: true
         elide: Text.ElideMiddle
     }
     BookText {
-        text: qsTr("added in library: ") + bookEntry.importDate
+        text: qsTr("加入书库: ") + bookEntry.importDate
         width: parent.width
         clip: true
         elide: Text.ElideMiddle
     }
     BookText {
-        text: qsTr("last access: ") + bookEntry.lastAccessDate
+        text: qsTr("上次阅读: ") + bookEntry.lastAccessDate
         width: parent.width
         clip: true
         elide: Text.ElideMiddle

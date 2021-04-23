@@ -104,7 +104,7 @@ Page {
     //![2]
 
     Text {
-        text: qsTr("Image Unavailable")
+        text: qsTr("图片不可用")
         visible: image.status == Image.Error
         anchors.centerIn: parent
         color: "red"
@@ -133,28 +133,28 @@ Page {
         id: backgroundMenu
         content: MenuLayout {
             MenuItem {
-                text: qsTr("Black")
+                text: qsTr("黑色")
                 onClicked: {
                     imageBG.color = "black";
                     OPTIONS.imageBackgroundColor = "black";
                 }
             }
             MenuItem {
-                text: qsTr("White")
+                text: qsTr("白色")
                 onClicked: {
                     imageBG.color = "white";
                     OPTIONS.imageBackgroundColor = "white";
                 }
             }
             MenuItem {
-                text: qsTr("Use from the dark theme")
+                text: qsTr("使用夜间模式")
                 onClicked: {
                     imageBG.color = optionsObj.backgroundColor1;
                     OPTIONS.imageBackgroundColor = optionsObj.backgroundColor1
                 }
             }
             MenuItem {
-                text: qsTr("Use from the daylight theme")
+                text: qsTr("使用白天模式")
                 onClicked: {
                     imageBG.color = optionsObj.backgroundColor2;
                     OPTIONS.imageBackgroundColor = optionsObj.backgroundColor2
@@ -170,7 +170,7 @@ Page {
         }
         ToolButton {
             iconSource: "qrc:/img/tb_personalise"
-            text: qsTr("Background")
+            text: qsTr("背景")
             onClicked: backgroundMenu.open();
             anchors.right: parent.right
             anchors.rightMargin: 3

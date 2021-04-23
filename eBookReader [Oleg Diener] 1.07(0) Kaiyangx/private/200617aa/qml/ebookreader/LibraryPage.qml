@@ -227,7 +227,7 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: qsTr("Group by author")
+                text: qsTr("按作者分组")
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "author";
@@ -237,7 +237,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("Group by title")
+                text: qsTr("按标题分组")
                 onClicked: {
                     lw.section.criteria = ViewSection.FirstCharacter;
                     lw.section.property = "name";
@@ -247,7 +247,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("Group by genre")
+                text: qsTr("按派别分组")
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "genre";
@@ -257,7 +257,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("Group by import-date")
+                text: qsTr("按日期分组")
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "importDate";
@@ -267,7 +267,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("Group by status")
+                text: qsTr("按状态分组")
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "status";
@@ -277,7 +277,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("No grouping")
+                text: qsTr("未分组")
                 onClicked: cancelGrouping()
             }
         }
@@ -288,31 +288,31 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: qsTr("Import")
+                text: qsTr("添加")
                 platformSubItemIndicator: true
                 onClicked: viewImportPage()
             }
             MenuItem {
-                text: qsTr("Settings")                
+                text: qsTr("设置")                
                 onClicked: viewSettingsPage()
             }
             MenuItem {
-                text: qsTr("Books group by...")
+                text: qsTr("分组按...")
                 platformSubItemIndicator: true
                 onClicked: groupingMenu.open()
             }
             MenuItem {
-                text: qsTr("Edit library")
+                text: qsTr("编辑书库")
                 onClicked: {
                     bookModel.EditMode = true;
                 }
             }
             MenuItem {
-                text: qsTr("Help and Info")
+                text: qsTr("用户指南")
                 onClicked: viewInfoPage()
             }
            MenuItem {
-               text: qsTr("Exit")
+               text: qsTr("退出")
                onClicked: Qt.quit()
            }
         }
@@ -324,23 +324,23 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: qsTr("Select all finished books")
+                text: qsTr("选择全部书签")
                 onClicked: bookModel.selectFinishedBooks()
             }
             MenuItem {
-                text: qsTr("Delete selected books")
+                text: qsTr("删除所选书签")
                 onClicked: deleteSelected();
             }
             MenuItem {
-                text: qsTr("Cancel selection")
+                text: qsTr("取消选择")
                 onClicked: bookModel.clearSelection()
             }
             MenuItem {
-                text: qsTr("Books group by...")
+                text: qsTr("分组按...")
                 onClicked: groupingMenu.open()
             }
             MenuItem {
-                text: qsTr("Close edit mode")
+                text: qsTr("关闭编辑模式")
                 onClicked: closeEditMode()
             }
         }

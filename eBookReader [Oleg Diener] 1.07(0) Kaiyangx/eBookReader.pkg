@@ -1,5 +1,5 @@
 ; Languages
-&EN
+&ZH
 
 ; Package header
 #{"eBookReader"}, (0x200617AA), 1, 7, 0, TYPE=SA
@@ -7,19 +7,20 @@
 ; Dependencies
 [0x20022E6D], 0, 0, 0, {"S60ProductID"}
 [0x20032DE7], 0, 0, 0, {"S60ProductID"}
+[0x2003A678], 0, 0, 0, {"Symbian Belle devices"}
 (0x2001E61C), 4, 7, 4, {"Qt"}
 (0x200346DE), 1, 1, 0, {"Qt Quick components for Symbian"}
 (0x200346DE), 1, 0, 0, {"Qt Quick components for Symbian"}
 (0x2002AC89), 1, 2, 0, {"QtMobility"}
 
 ; Vendor names
-%{"Oleg Diener"}
-:"Oleg Diener"
+%{"Kaiyangx"}
+:"Kaiyangx"
 
 "sys\bin\ebookreader.exe"-"!:\sys\bin\ebookreader.exe"
-"resource\apps\ebookreader.rsc"-"!:\resource\apps\ebookreader.rsc"
+"resource\apps\ebookreader.r31"-"!:\resource\apps\ebookreader.r31"
 "resource\apps\ebookreader.mif"-"!:\resource\apps\ebookreader.mif"
-"private\10003a3f\import\apps\ebookreader_reg.rsc"-"!:\private\10003a3f\import\apps\ebookreader_reg.rsc"
+"private\10003a3f\import\apps\ebookreader_reg.r31"-"!:\private\10003a3f\import\apps\ebookreader_reg.r31"
 "private\200617aa\qml\ebookreader\AboutColumn.qml"-"!:\private\200617aa\qml\ebookreader\AboutColumn.qml"
 "private\200617aa\qml\ebookreader\AnnotationPage.qml"-"!:\private\200617aa\qml\ebookreader\AnnotationPage.qml"
 "private\200617aa\qml\ebookreader\BookItem.qml"-"!:\private\200617aa\qml\ebookreader\BookItem.qml"

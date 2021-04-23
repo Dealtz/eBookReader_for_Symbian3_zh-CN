@@ -13,7 +13,7 @@ Page {
 
     onStatusChanged: {
         if(status === PageStatus.Active)
-            statusBarText.text = qsTr("Details");
+            statusBarText.text = qsTr("详情");
     }
 
     function saveDetails()

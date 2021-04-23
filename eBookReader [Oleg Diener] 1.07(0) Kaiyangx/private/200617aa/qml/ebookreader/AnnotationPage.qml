@@ -12,7 +12,7 @@ Page {
 
     onStatusChanged: {
         if(status === PageStatus.Active)
-            statusBarText.text = qsTr("Annotation");
+            statusBarText.text = qsTr("注解");
     }
 
     tools: ToolBarLayout {
