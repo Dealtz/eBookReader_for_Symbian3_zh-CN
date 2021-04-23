@@ -32,11 +32,11 @@ Component{
             visualParent: bookItem
             MenuLayout {
                 MenuItem {
-                    text: qsTr("删除")
+                    text: "删除该书"
                     onClicked: libraryPage.deleteBook(lt_idName.text)
                 }
                 MenuItem {
-                    text: qsTr("阅读")
+                    text: "开始阅读"
                     enabled: !bookModel.EditMode
                     onClicked: {                                            
                         if(imgExpressImport.visible){
@@ -48,11 +48,11 @@ Component{
                     }
                 }
                 MenuItem {
-                    text: qsTr("注解")
+                    text: "查看简介"
                     onClicked: libraryPage.viewBookAnnotation(lt_fileName.text)
                 }
                 MenuItem {
-                    text: qsTr("详情")
+                    text: "编辑详情"
                     onClicked: libraryPage.viewBookDetails(lt_fileName.text)
                 }
             }

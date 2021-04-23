@@ -11,7 +11,6 @@ Page {
     property int photoHeight
     property int photoWidth
 
-    //![0]
     ProgressBar {
         anchors.centerIn: parent
         minimumValue: 1
@@ -19,6 +18,7 @@ Page {
         value: image.progress * 100
         visible: image.status != Image.Ready
 
+    //![0]
         Text {
             text: Math.floor(parent.value) + " %"
             anchors.horizontalCenter: parent.horizontalCenter
@@ -26,10 +26,10 @@ Page {
             anchors.bottomMargin: 4
             font.bold: true
             color: "white"
+            z:5
         }
     }
     //![0]
-
     Flickable {
         id: flickable
 
@@ -104,7 +104,7 @@ Page {
     //![2]
 
     Text {
-        text: qsTr("图片不可用")
+        text: "图片打开失败"
         visible: image.status == Image.Error
         anchors.centerIn: parent
         color: "red"
@@ -133,28 +133,28 @@ Page {
         id: backgroundMenu
         content: MenuLayout {
             MenuItem {
-                text: qsTr("黑色")
+                text: "使用黑色背景"
                 onClicked: {
                     imageBG.color = "black";
                     OPTIONS.imageBackgroundColor = "black";
                 }
             }
             MenuItem {
-                text: qsTr("白色")
+                text: "使用白色背景"
                 onClicked: {
                     imageBG.color = "white";
                     OPTIONS.imageBackgroundColor = "white";
                 }
             }
             MenuItem {
-                text: qsTr("使用夜间模式")
+                text: "使用夜间模式"
                 onClicked: {
                     imageBG.color = optionsObj.backgroundColor1;
                     OPTIONS.imageBackgroundColor = optionsObj.backgroundColor1
                 }
             }
             MenuItem {
-                text: qsTr("使用白天模式")
+                text: "使用白天模式"
                 onClicked: {
                     imageBG.color = optionsObj.backgroundColor2;
                     OPTIONS.imageBackgroundColor = optionsObj.backgroundColor2
@@ -166,11 +166,10 @@ Page {
         ToolButton {
             iconSource: "toolbar-back"
             onClicked: pageStack.pop();
-            flat: false
         }
         ToolButton {
             iconSource: "qrc:/img/tb_personalise"
-            text: qsTr("背景")
+            text: "背景"
             onClicked: backgroundMenu.open();
             anchors.right: parent.right
             anchors.rightMargin: 3

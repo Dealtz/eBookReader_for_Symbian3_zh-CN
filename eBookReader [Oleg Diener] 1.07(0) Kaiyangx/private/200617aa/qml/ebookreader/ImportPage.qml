@@ -48,8 +48,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true
-            text: qsTr("从手机中选择一个文件. 该文件将被完全添加。"
-                       +" 添加完成后，你可以删除原文件来释放磁盘空间。");
+            text: "从手机中选择一个文件，该文件将被转换为ebr文件保存在设置的路径中。"
+                       +"添加完成后，你可以删除原文件(epub, fb2, zip)来释放磁盘空间(不推荐删除原文件)。";
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -61,8 +61,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true
-            text: qsTr("从手机或选择的目录中搜索和添加书籍。"
-                       +" 只有原数据将被导入，初次打开书本时全部导入。");
+            text: "扫描手机或选择的目录，快速搜索并添加书籍。"
+                       +" 只有书本信息被导入，在书名后会用符号\"<img src=\":/img/tb_sync\" width=16 heigth=16 />\"来标记。打开书本时将会继续完成全部内容的导入。";
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -74,8 +74,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true
-            text: qsTr("注意: 从文件加载的网页不能自动添加到书库中。"
-                       +" 为解决这一问题，请用 \"快速添加\" 或 \"从文件夹添加\" 。");
+            text: "提示: 从网页上下载的文件不能自动添加到书库中。"
+                       +"您需要使用 \"快速添加\" 或 \"添加文件\"将书本手动添加到书库 。";
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         visible: false
@@ -85,11 +85,11 @@ Page {
         id: importExpressMenu
         MenuLayout {
             MenuItem {
-                text: qsTr("从选择目录中添加")
+                text: "从文件夹中添加"
                 onClicked: startExpressImport(true);
             }
             MenuItem {
-                text: qsTr("从手机中添加")
+                text: "扫描手机以添加"
                 onClicked: startExpressImport(false);
             }
         }
@@ -97,10 +97,10 @@ Page {
     QueryDialog{
         id: msg1
         acceptButtonText: "确认"
-        message: qsTr("所有的交易(支付或其他)处理你和销售方的书籍。"
-                      + " eBookReader并非是这个过程中的一部分，购买书籍有关的任何问题要向你购买的网站。"
-                      +" 仔细检查你的电子书阅读器。")
-        titleText: qsTr("警告")
+        message: "所有书籍的交易都是在您和销售方之间进行的。"
+                      + " eBookReader并不参与您购买书籍的过程，购买书籍有关的任何问题请向您选择的网站咨询。"
+                      +" eBookReader只是一个本地的电子书阅读器。"
+        titleText: "提示"
         onButtonClicked: {
             bookImporter.searchInWeb();
         }
@@ -135,7 +135,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("从文件夹中添加")
+                        text: "添加文件"
                     }
                     BookText {                        
                         anchors.topMargin: platformStyle.paddingMedium
@@ -160,7 +160,7 @@ Page {
                         id: titleItemText
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("快速添加")
+                        text: "快速添加"
                     }
                     BookText {
                         anchors.topMargin: platformStyle.paddingMedium
@@ -184,7 +184,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("访问官网")
+                        text: "网上下载"
                     }
                     BookText {
                         anchors.topMargin: platformStyle.paddingMedium
@@ -231,7 +231,6 @@ Page {
         ToolButton {
             iconSource: "toolbar-back"
             onClicked: pageStack.pop();
-            flat: false
         }
     }
 

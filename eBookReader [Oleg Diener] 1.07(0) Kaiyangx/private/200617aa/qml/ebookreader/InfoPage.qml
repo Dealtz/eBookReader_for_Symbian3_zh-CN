@@ -87,13 +87,11 @@ Page {
             id: backBtn
             iconSource: "toolbar-back"
             onClicked: pageStack.pop()
-            flat: false
         }
         ToolButton {
             id: shareBtn
             iconSource: "toolbar-share"
             onClicked: optionsObj.shareIt();
-            flat: false
             anchors.left: backBtn.right
             anchors.leftMargin: 2
         }
@@ -102,15 +100,15 @@ Page {
             onClicked: {
                 if (isHelpViewed) {
                     tabGroup.currentTab = tab1content;
-                    text = qsTr("    用户指南    ");
+                    text = "用户指南";
                     isHelpViewed = false;
                 }else{
                     tabGroup.currentTab = tab2content;
-                    text = qsTr("关于程序");
+                    text = "关于程序";
                     isHelpViewed = true;
                 }
             }
-            text: qsTr("    用户指南    ")
+            text: "用户指南"
             anchors.right: parent.right
             anchors.rightMargin: 2
         }

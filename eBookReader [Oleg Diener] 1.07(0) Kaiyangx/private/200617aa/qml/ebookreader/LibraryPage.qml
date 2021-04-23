@@ -148,7 +148,6 @@ Page {
         ToolButton{
             id: infoButton
             iconSource: "qrc:/img/tb_info"
-            flat: false
             onClicked: {
                 viewInfoPage();
             }
@@ -158,7 +157,6 @@ Page {
             iconSource: isGrouped?"qrc:/img/tb_groups_open":"toolbar-search"
             onClicked: isGrouped?viewGroups():groupingMenu.open()
             anchors.horizontalCenter: parent.horizontalCenter
-            flat: false
         }
 //        ToolButton{
 //            iconSource: "toolbar-add"
@@ -170,7 +168,6 @@ Page {
 //        }
         ToolButton{
             iconSource: "qrc:/img/tb_quit"
-            flat: false
             anchors.right: parent.right
             onClicked: {
                 Qt.quit();
@@ -227,7 +224,7 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: qsTr("按作者分组")
+                text: "按书本作者分组"
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "author";
@@ -237,7 +234,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("按标题分组")
+                text: "按书本标题分组"
                 onClicked: {
                     lw.section.criteria = ViewSection.FirstCharacter;
                     lw.section.property = "name";
@@ -247,7 +244,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("按派别分组")
+                text: "按书本类别分组"
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "genre";
@@ -257,7 +254,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("按日期分组")
+                text: "按添加日期分组"
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "importDate";
@@ -267,7 +264,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("按状态分组")
+                text: "按阅读状态分组"
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "status";
@@ -277,7 +274,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("未分组")
+                text: "取消所有分组"
                 onClicked: cancelGrouping()
             }
         }
@@ -288,31 +285,31 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: qsTr("添加")
+                text: "添加书籍"
                 platformSubItemIndicator: true
                 onClicked: viewImportPage()
             }
             MenuItem {
-                text: qsTr("设置")                
+                text: "软件设置"                
                 onClicked: viewSettingsPage()
             }
             MenuItem {
-                text: qsTr("分组按...")
+                text: "分组浏览"
                 platformSubItemIndicator: true
                 onClicked: groupingMenu.open()
             }
             MenuItem {
-                text: qsTr("编辑书库")
+                text: "编辑书库"
                 onClicked: {
                     bookModel.EditMode = true;
                 }
             }
             MenuItem {
-                text: qsTr("用户指南")
+                text: "关于指南"
                 onClicked: viewInfoPage()
             }
            MenuItem {
-               text: qsTr("退出")
+               text: "退出软件"
                onClicked: Qt.quit()
            }
         }
@@ -324,23 +321,23 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: qsTr("选择全部书签")
+                text: "选择读完的书"
                 onClicked: bookModel.selectFinishedBooks()
             }
             MenuItem {
-                text: qsTr("删除所选书签")
+                text: "删除所选书籍"
                 onClicked: deleteSelected();
             }
             MenuItem {
-                text: qsTr("取消选择")
+                text: "取消选择"
                 onClicked: bookModel.clearSelection()
             }
             MenuItem {
-                text: qsTr("分组按...")
+                text: "分组浏览"
                 onClicked: groupingMenu.open()
             }
             MenuItem {
-                text: qsTr("关闭编辑模式")
+                text: "关闭编辑模式"
                 onClicked: closeEditMode()
             }
         }
@@ -353,12 +350,10 @@ Page {
                 if(bookModel.EditMode) closeEditMode();
                 else viewContentPage();
             }
-            flat: false
         }
         ToolButton {
             iconSource: bookModel.EditMode?"toolbar-delete":"toolbar-add";
             onClicked: bookModel.EditMode?deleteSelected():addNewBook();
-            flat: false
         }
         // add the standard menu button to the toolbar
         ToolButton {

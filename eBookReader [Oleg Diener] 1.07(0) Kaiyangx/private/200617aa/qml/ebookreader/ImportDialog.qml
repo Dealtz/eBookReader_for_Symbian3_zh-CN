@@ -12,7 +12,7 @@ MyDialog {
     property bool expImportFinished;
     property string expImportFinishedEndText;
 
-    titleText: expressImport?qsTr("快速添加"):qsTr("添加")
+    titleText: expressImport?"快速添加":"正在添加"
     closeAllowed: expressImport?false:true;
     privateCloseIcon: (!importOk) || (expressImport)
     onCloseButtonClicked: closeButtonClicked();
@@ -20,7 +20,7 @@ MyDialog {
     function closeButtonClicked()
     {
         if(dialog.expressImport){            
-            dialog.errorText = qsTr("请稍等...");
+            dialog.errorText = "请稍等";
             dialog.importOk = false;
             bookImporter.cancelImport();
         }
@@ -53,14 +53,14 @@ MyDialog {
         {
             dialog.indeterminateStatus = false;
             dialog.procent = 100;
-            dialog.expImportFinishedEndText = qsTr("添加完成");
+            dialog.expImportFinishedEndText = "添加完成";
             dialog.expImportFinished = true;
             dialog.importOk = true;
         }else{
             if(isOk){
                 dialog.close();
             }else{
-                dialog.errorText = qsTr("无法添加文件");
+                dialog.errorText = "无法添加文件";
                 dialog.importOk = isOk;
             }
         }        

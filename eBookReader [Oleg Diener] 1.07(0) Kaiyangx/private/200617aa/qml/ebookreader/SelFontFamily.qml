@@ -46,7 +46,6 @@ Page {
         ToolButton {
             iconSource: "toolbar-back"
             onClicked: pageStack.pop()
-            flat: false
         }
     }
 }

@@ -20,7 +20,7 @@ ListItem {
             inputMethodHints: Qt.ImhNoPredictiveText;
             width: rowRow.width - rowRow.spacing - switchComponent.width
             onTextChanged:{
-                copyBookmarkModel.setProperty(index, "名称", text)
+                copyBookmarkModel.setProperty(index, "name", text)
             }
         }
         Switch {
@@ -35,9 +35,9 @@ ListItem {
                 } else {
                     savedText = text1.text;
                     text1.text = "";
-                    text1.placeholderText = qsTr("删除书签");
+                    text1.placeholderText = "删除书签";
                 }
-                copyBookmarkModel.setProperty(index, "删除", !text1.enabled);
+                copyBookmarkModel.setProperty(index, "delete", !text1.enabled);
                 text1.forceActiveFocus();
             }
             anchors { verticalCenter: parent.verticalCenter; }

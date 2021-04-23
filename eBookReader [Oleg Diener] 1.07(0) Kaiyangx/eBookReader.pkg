@@ -14,8 +14,8 @@
 (0x2002AC89), 1, 2, 0, {"QtMobility"}
 
 ; Vendor names
-%{"Kaiyangx"}
-:"Kaiyangx"
+%{"Oleg Diener"}
+:"Oleg Diener"
 
 "sys\bin\ebookreader.exe"-"!:\sys\bin\ebookreader.exe"
 "resource\apps\ebookreader.r31"-"!:\resource\apps\ebookreader.r31"
