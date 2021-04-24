@@ -105,7 +105,7 @@ Page {
                 ListItemText {
                     mode: "normal"
                     role: "Title"
-                    text: "  " + qsTr("Font color")
+                    text: "  " + "字体颜色"
                 }
             }
             Row {
@@ -122,7 +122,7 @@ Page {
                 ListItemText {
                     mode: "normal"
                     role: "Title"
-                    text: "  " + qsTr("Background color")
+                    text: "  " + "背景颜色"
                 }
             }
             Column{
@@ -133,7 +133,7 @@ Page {
                 ListItemText {
                     id: brightnessTitle
                     role: "Title"
-                    text: qsTr("Brightness")
+                    text: "亮度"
                 }
                 Rectangle{
                     id: brightnessSample
@@ -144,7 +144,7 @@ Page {
                     anchors.horizontalCenter: parent.horizontalCenter                    
                     Text{
                         anchors.centerIn: parent
-                        text: qsTr("Sample Text")
+                        text: "文本范例"
                         color: Qt.lighter(fontColor, brightness / 100);
                     }
                 }
@@ -174,7 +174,7 @@ Page {
         ToolButton {
             iconSource: "toolbar-back"
             onClicked: doOk()
-            flat: false
+            //flat: false
         }
     }    
 }

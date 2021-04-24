@@ -369,11 +369,11 @@ Page {
         id: copyMenu
         MenuLayout {
             MenuItem {
-                text: qsTr("Copy text")
+                text: "复制内容"
                 onClicked: browser.copySelection()
             }
             MenuItem {
-                text: qsTr("Cancel selection")
+                text: "取消选择"
                 onClicked: browser.cancelSelection()
             }
         }
@@ -383,33 +383,33 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: qsTr("Settings")                
+                text: "设置"
                 onClicked: viewSettingsPage()
             }
             MenuItem {
-                text: qsTr("Screen orientation")
+                text: "屏幕"
                 platformSubItemIndicator: true
                 onClicked: screenMenu.open()
             }
             MenuItem {
-                text: qsTr("Display mode")
+                text: "显示"
                 platformSubItemIndicator: true
                 onClicked: colorsMenu.open()
             }
             MenuItem {
-                text: qsTr("Navigation")
+                text: "导航"
                 platformSubItemIndicator: true
                 onClicked: navigationMenu.open()
                 enabled: isOpened()
             }
             MenuItem {
-                text: qsTr("Bookmarks")
+                text: "书签"
                 platformSubItemIndicator: true
                 onClicked: bookmarkMenu.open()
                 enabled: isOpened()
             }
             MenuItem {
-                text: qsTr("Exit")
+                text: "退出"
                 onClicked: {
                     Qt.quit();
                 }
@@ -420,11 +420,11 @@ Page {
         id: screenMenu
         MenuLayout {
             MenuItem {
-                text: qsTr("Portrait")
+                text: "竖屏"
                 onClicked: setPortrait()
             }
             MenuItem {
-                text: qsTr("Landscape")
+                text: "横屏"
                 onClicked: setLandscape()
             }
         }
@@ -434,7 +434,7 @@ Page {
         MenuLayout {
             MenuItemWithCheck {
                 checked: fullScreen
-                text: qsTr("Full screen")
+                text: "隐藏工具栏"
                 onClicked: {
                     checked = !checked;
                     setFullScreen();
@@ -442,18 +442,18 @@ Page {
             }
             MenuItemWithCheck {
                 checked: showStatusBar
-                text: qsTr("View title bar")
+                text: "显示标题栏"
                 onClicked: {
                     checked = !checked;
                     setShowStatusBar();
                 }
             }
             MenuItem {
-                text: qsTr("in the daylight")
+                text: "暗色主题"
                 onClicked: setDayColors()
             }
             MenuItem {
-                text: qsTr("in the dark")
+                text: "亮色主题"
                 onClicked: setDarkColors()
             }
         }
@@ -462,32 +462,32 @@ Page {
         id: navigationMenu
         MenuLayout {
             MenuItem {
-                text: qsTr("Index Page")
+                text: "目录"
                 onClicked: viewIndexPage()
             }
             MenuItem {
-                text: qsTr("Goto page")
+                text: "跳页"
                 onClicked: viewGotoPage()
             }
             MenuItem {
-                text: qsTr("Goto bookmark")
+                text: "书签"
                 onClicked: viewBookmarkPage()
             }            
             MenuItem {
-                text: qsTr("First page")
+                text: "首页"
                 onClicked: gotoPage(1)
             }
             MenuItem {
-                text: qsTr("Last page")
+                text: "尾页"
                 onClicked: gotoPage(browser.pageCount)
             }
             MenuItem {
-                text: qsTr("Back")
+                text: "后退"
                 onClicked: browser.gotoLinkBackward()
                 enabled: hasLinkBackward
             }
             MenuItem {
-                text: qsTr("Forward")
+                text: "前进"
                 onClicked: browser.gotoLinkForward()
                 enabled: hasLinkForward
             }
@@ -497,19 +497,19 @@ Page {
         id: bookmarkMenu
         MenuLayout {
             MenuItem {
-                text: qsTr("Add a bookmark on current page")
+                text: "添加书签"
                 onClicked: browser.addBookmark()
             }
             MenuItem {
-                text: qsTr("Goto bookmark")
+                text: "转到书签"
                 onClicked: viewBookmarkPage()
             }
             MenuItem {
-                text: qsTr("Edit bookmarks")
+                text: "编辑书签"
                 onClicked: viewEditBookmarkPage()
             }
             MenuItem {
-                text: qsTr("Delete all bookmarks")
+                text: "删除全部书签"
                 onClicked: browser.deleteBookmarks()
             }
         }
@@ -520,7 +520,7 @@ Page {
             id: backButton
             iconSource: "toolbar-back"
             onClicked: viewLibraryPage()
-            flat: false
+            //flat: false
         }
         ToolButton {
             id: menuToolButton
@@ -560,7 +560,7 @@ Page {
             anchors.right: downButton.left
             onClicked: browser.prevPage()
             enabled: isOpened()
-            flat: false
+            //flat: false
         }
         ToolButton{
             id: downButton
@@ -568,7 +568,7 @@ Page {
             anchors.right: parent.right
             onClicked: browser.nextPage()
             enabled: isOpened()
-            flat: false
+            //flat: false
         }
     }
 

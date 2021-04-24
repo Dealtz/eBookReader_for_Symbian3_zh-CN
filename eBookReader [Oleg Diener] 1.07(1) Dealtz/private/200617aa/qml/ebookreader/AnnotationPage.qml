@@ -12,7 +12,7 @@ Page {
 
     onStatusChanged: {
         if(status === PageStatus.Active)
-            statusBarText.text = qsTr("Annotation");
+            statusBarText.text = "简介";
     }
 
     tools: ToolBarLayout {
@@ -22,7 +22,7 @@ Page {
             onClicked: {
                 pageStack.pop();
             }
-            flat: false
+            //flat: false
         }
     }    
 

@@ -8,8 +8,8 @@ CommonDialog {
     property int totalPages
     signal gotoPage( string pageNo )
 
-    titleText: qsTr("Goto page")
-    buttonTexts: [qsTr("OK"), qsTr("Cancel")]
+    titleText: "跳页"
+    buttonTexts: ["确认", "取消"]
     privateCloseIcon: true
     height: 200
     content: Item {
@@ -25,7 +25,7 @@ CommonDialog {
         Label {
             anchors.left: pagefield.left;
             anchors.top: pagefield.bottom
-            text: qsTr("Total pages: ") + gotoPageDialog.totalPages
+            text: "总页码: " + gotoPageDialog.totalPages
             font.pixelSize: platformStyle.fontSizeSmall
          }
     }

@@ -55,10 +55,10 @@ Page {
         ToolButton {
             iconSource: "toolbar-back"
             onClicked: pageStack.pop();
-            flat: false
+            //flat: false
         }
         Button {
-            text: qsTr("Cancel grouping")
+            text: "取消分组"
             anchors.right: parent.right
             anchors.rightMargin: 2
             onClicked: cancel();
@@ -68,7 +68,7 @@ Page {
         if(status === PageStatus.Active){
             listView.focus = true;
             window.state = "";
-            statusBarText.text = qsTr("Groups");
+            statusBarText.text = "分组浏览";
         }
     }
     onFocusChanged: {

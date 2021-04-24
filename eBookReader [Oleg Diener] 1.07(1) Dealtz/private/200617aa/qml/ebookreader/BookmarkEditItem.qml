@@ -35,7 +35,7 @@ ListItem {
                 } else {
                     savedText = text1.text;
                     text1.text = "";
-                    text1.placeholderText = qsTr("Bookmark deleted");
+                    text1.placeholderText = "删除书签";
                 }
                 copyBookmarkModel.setProperty(index, "deleted", !text1.enabled);
                 text1.forceActiveFocus();
