@@ -80,8 +80,8 @@ Page {
             anchors.right: parent.right
             anchors.rightMargin: 2
             checkedButton: tab1content
-            TabButton { tab: tab1content; text: qsTr("About ...") }
-            TabButton { tab: tab2content; text: qsTr("Help") }
+            TabButton { tab: tab1content; text: qsTr("关于") }
+            TabButton { tab: tab2content; text: qsTr("帮助") }
         }
     }
 }

@@ -1,4 +1,4 @@
-import QtQuick 1.1
+﻿import QtQuick 1.1
 import com.nokia.symbian 1.1
 
 Page {
@@ -17,563 +17,563 @@ Page {
     ListModel {
         id: colorsModel
          ListElement {
-             name: "Aliceblue"
+             name: "艾莉斯蓝"
              colorName: "Aliceblue"
          }
          ListElement {
-             name: "Antiquewhite"
+             name: "古董白"
              colorName: "Antiquewhite"
          }
          ListElement {
-             name: "Aqua"
+             name: "海洋蓝"
              colorName: "Aqua"
          }
          ListElement {
-             name: "Aquamarine"
+             name: "蓝宝石"
              colorName: "Aquamarine"
          }
          ListElement {
-             name: "Azure"
+             name: "天空蓝"
              colorName: "Azure"
          }
          ListElement {
-             name: "Beige"
+             name: "米白色"
              colorName: "Beige"
          }
          ListElement {
-             name: "Bisque"
+             name: "浓郁黄"
              colorName: "Bisque"
          }
          ListElement {
-             name: "Black"
+             name: "纯色黑"
              colorName: "Black"
          }
          ListElement {
-             name: "Blanchedalmond"
+             name: "杏仁白"
              colorName: "Blanchedalmond"
          }
          ListElement {
-             name: "Blue"
+             name: "纯色蓝"
              colorName: "Blue"
          }
          ListElement {
-             name: "Blueviolet"
+             name: "蓝紫美"
              colorName: "Blueviolet"
          }
          ListElement {
-             name: "Brown"
+             name: "棕红色"
              colorName: "Brown"
          }
          ListElement {
-             name: "Burlywood"
+             name: "原木色"
              colorName: "Burlywood"
          }
          ListElement {
-             name: "Cadetblue"
+             name: "藏青色"
              colorName: "Cadetblue"
          }
          ListElement {
-             name: "Chartreuse"
+             name: "黄绿色"
              colorName: "Chartreuse"
          }
          ListElement {
-             name: "Chocolate"
+             name: "巧克力"
              colorName: "Chocolate"
          }
          ListElement {
-             name: "Coral"
+             name: "珊瑚橙"
              colorName: "Coral"
          }
          ListElement {
-             name: "Cornflowerblue"
+             name: "皇家蓝"
              colorName: "Cornflowerblue"
          }
          ListElement {
-             name: "Cornsilk"
+             name: "玉米穗黄"
              colorName: "Cornsilk"
          }
          ListElement {
-             name: "Crimson"
+             name: "赤红色"
              colorName: "Crimson"
          }
          ListElement {
-             name: "Cyan"
+             name: "高亮青"
              colorName: "Cyan"
          }
          ListElement {
-             name: "Darkblue"
+             name: "深蓝色"
              colorName: "Darkblue"
          }
          ListElement {
-             name: "Darkcyan"
+             name: "灰绿色"
              colorName: "Darkcyan"
          }
          ListElement {
-             name: "Darkgoldenrod"
+             name: "深金黄"
              colorName: "Darkgoldenrod"
          }
          ListElement {
-             name: "Darkgray"
+             name: "深灰色"
              colorName: "Darkgray"
          }
          ListElement {
-             name: "Darkgreen"
+             name: "墨绿色"
              colorName: "Darkgreen"
          }         
          ListElement {
-             name: "Darkkhaki"
+             name: "卡其黄"
              colorName: "Darkkhaki"
          }
          ListElement {
-             name: "Darkmagenta"
+             name: "暗洋红"
              colorName: "Darkmagenta"
          }
          ListElement {
-             name: "Darkolivegreen"
+             name: "暗绿色"
              colorName: "Darkolivegreen"
          }
          ListElement {
-             name: "Darkorange"
+             name: "深橙色"
              colorName: "Darkorange"
          }
          ListElement {
-             name: "Darkorchid"
+             name: "深兰紫"
              colorName: "Darkorchid"
          }
          ListElement {
-             name: "Darkred"
+             name: "暗红色"
              colorName: "Darkred"
          }
          ListElement {
-             name: "Darksalmon"
+             name: "深鲑红"
              colorName: "Darksalmon"
          }
          ListElement {
-             name: "Darkseagreen"
+             name: "深海绿"
              colorName: "Darkseagreen"
          }
          ListElement {
-             name: "Darkslateblue"
+             name: "深青蓝"
              colorName: "Darkslateblue"
          }
          ListElement {
-             name: "Darkslategray"
+             name: "深青灰"
              colorName: "Darkslategray"
          }
          ListElement {
-             name: "Darkturquoise"
+             name: "墨绿色"
              colorName: "Darkturquoise"
          }
          ListElement {
-             name: "Darkviolet"
+             name: "深紫色"
              colorName: "Darkviolet"
          }
          ListElement {
-             name: "Deeppink"
+             name: "深粉红"
              colorName: "Deeppink"
          }
          ListElement {
-             name: "Deepskyblue"
+             name: "深天蓝"
              colorName: "Deepskyblue"
          }
          ListElement {
-             name: "Dimgray"
+             name: "黑灰色"
              colorName: "Dimgray"
          }         
          ListElement {
-             name: "Dodgerblue"
+             name: "宝蓝色"
              colorName: "Dodgerblue"
          }
          ListElement {
-             name: "Firebrick"
+             name: "火砖色"
              colorName: "Firebrick"
          }
          ListElement {
-             name: "Floralwhite"
+             name: "花白色"
              colorName: "Floralwhite"
          }
          ListElement {
-             name: "Forestgreen"
+             name: "森林绿"
              colorName: "Forestgreen"
          }
          ListElement {
-             name: "Fuchsia"
+             name: "紫红色"
              colorName: "Fuchsia"
          }
          ListElement {
-             name: "Gainsboro"
+             name: "亮灰色"
              colorName: "Gainsboro"
          }
          ListElement {
-             name: "Ghostwhite"
+             name: "幽灵白"
              colorName: "Ghostwhite"
          }
          ListElement {
-             name: "Gold"
+             name: "金黄色"
              colorName: "Gold"
          }
          ListElement {
-             name: "Goldenrod"
+             name: "金菊黄"
              colorName: "Goldenrod"
          }
          ListElement {
-             name: "Gray"
+             name: "纯灰色"
              colorName: "Gray"
          }
          ListElement {
-             name: "Green"
+             name: "纯绿色"
              colorName: "Green"
          }
          ListElement {
-             name: "Greenyellow"
+             name: "黄绿色"
              colorName: "Greenyellow"
          }
          ListElement {
-             name: "Honeydew"
+             name: "浅蜜色"
              colorName: "Honeydew"
          }
          ListElement {
-             name: "Hotpink"
+             name: "亮粉红"
              colorName: "Hotpink"
          }
          ListElement {
-             name: "Indianred"
+             name: "印第安红"
              colorName: "Indianred"
          }
          ListElement {
-             name: "Indigo"
+             name: "靛青色"
              colorName: "Indigo"
          }
          ListElement {
-             name: "Ivory"
+             name: "象牙色"
              colorName: "Ivory"
          }
          ListElement {
-             name: "Khaki"
+             name: "土黄色"
              colorName: "Khaki"
          }
          ListElement {
-             name: "Lavender"
+             name: "薰衣草"
              colorName: "Lavender"
          }
          ListElement {
-             name: "Lavenderblush"
+             name: "淡紫红"
              colorName: "Lavenderblush"
          }
          ListElement {
-             name: "Lawngreen"
+             name: "草绿色"
              colorName: "Lawngreen"
          }
          ListElement {
-             name: "Lemonchiffon"
+             name: "粉黄色"
              colorName: "Lemonchiffon"
          }
          ListElement {
-             name: "Lightblue"
+             name: "浅蓝色"
              colorName: "Lightblue"
          }
          ListElement {
-             name: "Lightcoral"
+             name: "浅珊瑚红"
              colorName: "Lightcoral"
          }
          ListElement {
-             name: "Lightcyan"
+             name: "浅青绿"
              colorName: "Lightcyan"
          }
          ListElement {
-             name: "Lightgoldenrodyellow"
+             name: "浅金黄"
              colorName: "Lightgoldenrodyellow"
          }
          ListElement {
-             name: "Lightgray"
+             name: "浅灰色"
              colorName: "Lightgray"
          }
          ListElement {
-             name: "Lightgreen"
+             name: "浅绿色"
              colorName: "Lightgreen"
          }
          ListElement {
-             name: "Lightpink"
+             name: "浅粉红"
              colorName: "Lightpink"
          }
          ListElement {
-             name: "Lightsalmon"
+             name: "浅橙红"
              colorName: "Lightsalmon"
          }
          ListElement {
-             name: "Lightseagreen"
+             name: "海藻绿"
              colorName: "Lightseagreen"
          }
          ListElement {
-             name: "Lightskyblue"
+             name: "浅天蓝"
              colorName: "Lightskyblue"
          }
          ListElement {
-             name: "Lightslategray"
+             name: "浅青灰"
              colorName: "Lightslategray"
          }
          ListElement {
-             name: "Lightsteelblue"
+             name: "淡钢蓝"
              colorName: "Lightsteelblue"
          }
          ListElement {
-             name: "Lightyellow"
+             name: "淡黄色"
              colorName: "Lightyellow"
          }
          ListElement {
-             name: "Lime"
+             name: "青橙绿"
              colorName: "Lime"
          }
          ListElement {
-             name: "Limegreen"
+             name: "石灰绿"
              colorName: "Limegreen"
          }
          ListElement {
-             name: "Linen"
+             name: "纯白色"
              colorName: "Linen"
          }
          ListElement {
-             name: "Magenta"
+             name: "洋红色"
              colorName: "Magenta"
          }
          ListElement {
-             name: "Maroon"
+             name: "褐红色"
              colorName: "Maroon"
          }
          ListElement {
-             name: "Mediumaquamarine"
+             name: "中碧藍"
              colorName: "Mediumaquamarine"
          }
          ListElement {
-             name: "Mediumblue"
+             name: "中蓝色"
              colorName: "Mediumblue"
          }
          ListElement {
-             name: "Mediumorchid"
+             name: "中兰花紫"
              colorName: "Mediumorchid"
          }
          ListElement {
-             name: "Mediumpurple"
+             name: "中紫色"
              colorName: "Mediumpurple"
          }
          ListElement {
-             name: "Mediumseagreen"
+             name: "中海藻绿"
              colorName: "Mediumseagreen"
          }
          ListElement {
-             name: "Mediumslateblue"
+             name: "中青蓝"
              colorName: "Mediumslateblue"
          }
          ListElement {
-             name: "Mediumspringgreen"
+             name: "中嫩绿"
              colorName: "Mediumspringgreen"
          }
          ListElement {
-             name: "Mediumturquoise"
+             name: "中粉蓝"
              colorName: "Mediumturquoise"
          }
          ListElement {
-             name: "Mediumvioletred"
+             name: "中紫罗兰红"
              colorName: "Mediumvioletred"
          }
          ListElement {
-             name: "Midnightblue"
+             name: "深夜蓝"
              colorName: "Midnightblue"
          }
          ListElement {
-             name: "Mintcream"
+             name: "薄荷色"
              colorName: "Mintcream"
          }
          ListElement {
-             name: "Mistyrose"
+             name: "雾中玫瑰"
              colorName: "Mistyrose"
          }
          ListElement {
-             name: "Moccasin"
+             name: "鹿皮色"
              colorName: "Moccasin"
          }
          ListElement {
-             name: "Navajowhite"
+             name: "印地安黄"
              colorName: "Navajowhite"
          }
          ListElement {
-             name: "Navy"
+             name: "海军蓝"
              colorName: "Navy"
          }
          ListElement {
-             name: "Oldlace"
+             name: "旧布黄"
              colorName: "Oldlace"
          }
          ListElement {
-             name: "Olive"
+             name: "橄榄褐"
              colorName: "Olive"
          }
          ListElement {
-             name: "Olivedrab"
+             name: "深绿褐"
              colorName: "Olivedrab"
          }
          ListElement {
-             name: "Orange"
+             name: "焦橙色"
              colorName: "Orange"
          }
          ListElement {
-             name: "Orangered"
+             name: "橙红色"
              colorName: "Orangered"
          }
          ListElement {
-             name: "Orchid"
+             name: "兰紫红"
              colorName: "Orchid"
          }
          ListElement {
-             name: "Palegoldenrod"
+             name: "淡金黄"
              colorName: "Palegoldenrod"
          }
          ListElement {
-             name: "Palegreen"
+             name: "淡绿色"
              colorName: "Palegreen"
          }
          ListElement {
-             name: "Paleturquoise"
+             name: "淡蓝绿"
              colorName: "Paleturquoise"
          }
          ListElement {
-             name: "Palevioletred"
+             name: "浅紫红"
              colorName: "Palevioletred"
          }
          ListElement {
-             name: "Papayawhip"
+             name: "粉木瓜橙"
              colorName: "Papayawhip"
          }
          ListElement {
-             name: "Peachpuff"
+             name: "粉桃红"
              colorName: "Peachpuff"
          }
          ListElement {
-             name: "Peru"
+             name: "秘鲁色"
              colorName: "Peru"
          }
          ListElement {
-             name: "Pink"
+             name: "粉红色"
              colorName: "Pink"
          }
          ListElement {
-             name: "Plum"
+             name: "暗红紫"
              colorName: "Plum"
          }
          ListElement {
-             name: "Powderblue"
+             name: "火药蓝"
              colorName: "Powderblue"
          }
          ListElement {
-             name: "Purple"
+             name: "纯紫色"
              colorName: "Purple"
          }
          ListElement {
-             name: "Red"
+             name: "纯红色"
              colorName: "Red"
          }
          ListElement {
-             name: "Rosybrown"
+             name: "玫瑰褐"
              colorName: "Rosybrown"
          }
          ListElement {
-             name: "Royalblue"
+             name: "宝蓝色"
              colorName: "Royalblue"
          }
          ListElement {
-             name: "Saddlebrown"
+             name: "马鞍棕色"
              colorName: "Saddlebrown"
          }
          ListElement {
-             name: "Salmon"
+             name: "鲜肉色"
              colorName: "Salmon"
          }
          ListElement {
-             name: "Sandybrown"
+             name: "黄褐色"
              colorName: "Sandybrown"
          }
          ListElement {
-             name: "Seagreen"
+             name: "海洋绿"
              colorName: "Seagreen"
          }
          ListElement {
-             name: "Seashell"
+             name: "海贝色"
              colorName: "Seashell"
          }
          ListElement {
-             name: "Sienna"
+             name: "纯蓝色"
              colorName: "Sienna"
          }
          ListElement {
-             name: "Silver"
+             name: "北极银"
              colorName: "Silver"
          }
          ListElement {
-             name: "Skyblue"
+             name: "天蓝色"
              colorName: "Skyblue"
          }
          ListElement {
-             name: "Slateblue"
+             name: "石青蓝"
              colorName: "Slateblue"
          }
          ListElement {
-             name: "Slategray"
+             name: "岩石灰"
              colorName: "Slategray"
          }
          ListElement {
-             name: "Snow"
+             name: "石灰白"
              colorName: "Snow"
          }
          ListElement {
-             name: "Springgreen"
+             name: "春绿色"
              colorName: "Springgreen"
          }
          ListElement {
-             name: "Steelblue"
+             name: "钢青色"
              colorName: "Steelblue"
          }
          ListElement {
-             name: "Tan"
+             name: "棕褐色"
              colorName: "Tan"
          }
          ListElement {
-             name: "Teal"
+             name: "兰绿色"
              colorName: "Teal"
          }
          ListElement {
-             name: "Thistle"
+             name: "紫蓟色"
              colorName: "Thistle"
          }
          ListElement {
-             name: "Tomato"
+             name: "番茄红"
              colorName: "Tomato"
          }
          ListElement {
-             name: "Turquoise"
+             name: "绿松石"
              colorName: "Turquoise"
          }
          ListElement {
-             name: "Violet"
+             name: "紫罗兰"
              colorName: "Violet"
          }
          ListElement {
-             name: "Wheat"
+             name: "麦黄色"
              colorName: "Wheat"
          }
          ListElement {
-             name: "White"
+             name: "黄白色"
              colorName: "White"
          }
          ListElement {
-             name: "Whitesmoke"
+             name: "烟白色"
              colorName: "Whitesmoke"
          }
          ListElement {
-             name: "Yellow"
+             name: "天真黄"
              colorName: "Yellow"
          }
          ListElement {
-             name: "Yellowgreen"
+             name: "叶脉绿"
              colorName: "Yellowgreen"
          }
     }

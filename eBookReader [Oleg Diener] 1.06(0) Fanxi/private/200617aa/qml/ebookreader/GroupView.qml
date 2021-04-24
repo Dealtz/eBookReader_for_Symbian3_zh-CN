@@ -1,4 +1,4 @@
-import QtQuick 1.1
+﻿import QtQuick 1.1
 import com.nokia.symbian 1.1
 import MyLibrary 1.0
 
@@ -58,7 +58,7 @@ Page {
             flat: false
         }
         Button {
-            text: qsTr("Cancel grouping")
+            text: qsTr("取消分组")
             anchors.right: parent.right
             anchors.rightMargin: 2
             onClicked: cancel();
@@ -68,7 +68,7 @@ Page {
         if(status === PageStatus.Active){
             listView.focus = true;
             window.state = "";
-            statusBarText.text = qsTr("Groups");
+            statusBarText.text = qsTr("组");
         }
     }
     onFocusChanged: {

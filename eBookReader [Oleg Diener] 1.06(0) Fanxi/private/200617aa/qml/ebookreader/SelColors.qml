@@ -1,4 +1,4 @@
-import QtQuick 1.1
+﻿import QtQuick 1.1
 import com.nokia.symbian 1.1
 
 Page {
@@ -105,7 +105,7 @@ Page {
                 ListItemText {
                     mode: "normal"
                     role: "Title"
-                    text: "  " + qsTr("Font color")
+                    text: "  " + qsTr("字体颜色")
                 }
             }
             Row {
@@ -122,7 +122,7 @@ Page {
                 ListItemText {
                     mode: "normal"
                     role: "Title"
-                    text: "  " + qsTr("Background color")
+                    text: "  " + qsTr("背景颜色")
                 }
             }
             Column{
@@ -133,7 +133,7 @@ Page {
                 ListItemText {
                     id: brightnessTitle
                     role: "Title"
-                    text: qsTr("Brightness")
+                    text: qsTr("亮度")
                 }
                 Rectangle{
                     id: brightnessSample
@@ -144,7 +144,7 @@ Page {
                     anchors.horizontalCenter: parent.horizontalCenter                    
                     Text{
                         anchors.centerIn: parent
-                        text: qsTr("Sample Text")
+                        text: qsTr("示例文本")
                         color: Qt.lighter(fontColor, brightness / 100);
                     }
                 }

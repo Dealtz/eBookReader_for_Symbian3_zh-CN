@@ -97,7 +97,7 @@ Page {
     //![2]
 
     Text {
-        text: qsTr("Image Unavailable")
+        text: qsTr("图像不可用")
         visible: image.status == Image.Error
         anchors.centerIn: parent
         color: "red"

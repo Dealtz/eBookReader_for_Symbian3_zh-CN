@@ -1,4 +1,4 @@
-import QtQuick 1.1
+﻿import QtQuick 1.1
 import com.nokia.symbian 1.1
 import MyLibrary 1.0
 import "options.js" as OPTIONS
@@ -13,7 +13,7 @@ Page {
 
     onStatusChanged: {
         if(status === PageStatus.Active)
-            statusBarText.text = qsTr("Details");
+            statusBarText.text = qsTr("详细信息");
     }
 
     function saveDetails()

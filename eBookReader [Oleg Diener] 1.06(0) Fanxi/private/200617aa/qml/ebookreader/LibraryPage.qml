@@ -1,4 +1,4 @@
-import QtQuick 1.1
+﻿import QtQuick 1.1
 import com.nokia.symbian 1.1
 import "options.js" as OPTIONS
 
@@ -9,7 +9,7 @@ Page {
     property bool useGrid: false
     onStatusChanged: {
         if(status === PageStatus.Active){
-            statusBarText.text = "eBookReader";
+            statusBarText.text = "epub书籍阅读器";
             window.state = "";
             lw.focus = true
         }
@@ -227,7 +227,7 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: qsTr("Group by author")
+                text: qsTr("分组: 作者")
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "author";
@@ -237,7 +237,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("Group by title")
+                text: qsTr("分组: 标题")
                 onClicked: {
                     lw.section.criteria = ViewSection.FirstCharacter;
                     lw.section.property = "name";
@@ -247,7 +247,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("Group by genre")
+                text: qsTr("分组: 类型")
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "genre";
@@ -257,7 +257,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("Group by import-date")
+                text: qsTr("分组: 导入日期")
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "importDate";
@@ -267,7 +267,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("Group by status")
+                text: qsTr("分组: 状态信息")
                 onClicked: {
                     lw.section.criteria = ViewSection.FullString;
                     lw.section.property = "status";
@@ -277,7 +277,7 @@ Page {
                 }
             }
             MenuItem {
-                text: qsTr("No grouping")
+                text: qsTr("没有分组")
                 onClicked: cancelGrouping()
             }
         }
@@ -288,31 +288,31 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: qsTr("Import")
+                text: qsTr("导入书籍")
                 platformSubItemIndicator: true
                 onClicked: viewImportPage()
             }
             MenuItem {
-                text: qsTr("Settings")                
+                text: qsTr("设置中心")                
                 onClicked: viewSettingsPage()
             }
             MenuItem {
-                text: qsTr("Books group by...")
+                text: qsTr("图书组风格")
                 platformSubItemIndicator: true
                 onClicked: groupingMenu.open()
             }
             MenuItem {
-                text: qsTr("Edit library")
+                text: qsTr("编辑图书库")
                 onClicked: {
                     bookModel.EditMode = true;
                 }
             }
             MenuItem {
-                text: qsTr("Help and Info")
+                text: qsTr("关于@帮助")
                 onClicked: viewInfoPage()
             }
            MenuItem {
-               text: qsTr("Exit")
+               text: qsTr("退出")
                onClicked: Qt.quit()
            }
         }
@@ -324,23 +324,23 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: qsTr("Select all finished books")
+                text: qsTr("选择书籍")
                 onClicked: bookModel.selectFinishedBooks()
             }
             MenuItem {
-                text: qsTr("Delete selected books")
+                text: qsTr("删除选定的书籍")
                 onClicked: deleteSelected();
             }
             MenuItem {
-                text: qsTr("Cancel selection")
+                text: qsTr("取消选择")
                 onClicked: bookModel.clearSelection()
             }
             MenuItem {
-                text: qsTr("Books group by...")
+                text: qsTr("书籍组")
                 onClicked: groupingMenu.open()
             }
             MenuItem {
-                text: qsTr("Close edit mode")
+                text: qsTr("关闭编辑模式")
                 onClicked: closeEditMode()
             }
         }

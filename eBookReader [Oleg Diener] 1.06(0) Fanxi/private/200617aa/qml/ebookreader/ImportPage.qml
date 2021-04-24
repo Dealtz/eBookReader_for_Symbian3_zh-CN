@@ -1,4 +1,4 @@
-import QtQuick 1.1
+﻿import QtQuick 1.1
 import com.nokia.symbian 1.1
 import "options.js" as OPTIONS
 
@@ -32,7 +32,7 @@ Page {
             id: ttLI
             mode: "normal"
             role: "Title"
-            text: "One line text"
+            text: "一行文本"
         }
         BookText {
             id: tt2
@@ -43,8 +43,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true
-            text: qsTr("Select a file in the mobile phone. The selected file will be completely imported."
-                       +" After the import is complete, you can delete the source file to increase the storage space on a disk.");
+            text: qsTr("在手机磁盘中选择一个文件，选定的文件将完全导入。"
+                       +"\n导入完成后，您可以删除源文件，以增加磁盘上的存储空间");
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -56,8 +56,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true
-            text: qsTr("Books are searched and imported from the mobile phone or selected directory."
-                       +" Only meta data will be imported, the full import will launched by the first opening of book.");
+            text: qsTr("从选定的目录中搜索或从手机中的盘符中导入书籍文件。"
+                       +"\n只有书籍的记录文件被导入，您可在库中找到它，然后打开它，它将全部导入");
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         visible: false
@@ -67,11 +67,11 @@ Page {
         id: importExpressMenu
         MenuLayout {
             MenuItem {
-                text: qsTr("Import from a selected directory")
+                text: qsTr("从选定目录导入")
                 onClicked: startExpressImport(true);
             }
             MenuItem {
-                text: qsTr("Import from the mobile phone")
+                text: qsTr("从全盘搜索导入")
                 onClicked: startExpressImport(false);
             }
         }
@@ -103,7 +103,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Import from file")
+                        text: qsTr("文件夹导入")
                     }
                     BookText {                        
                         anchors.topMargin: platformStyle.paddingMedium
@@ -128,7 +128,7 @@ Page {
                         id: titleItemText
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Express import")
+                        text: qsTr("快速导入")
                     }
                     BookText {
                         anchors.topMargin: platformStyle.paddingMedium

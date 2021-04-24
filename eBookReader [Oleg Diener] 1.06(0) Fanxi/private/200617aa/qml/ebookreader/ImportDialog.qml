@@ -1,4 +1,4 @@
-import QtQuick 1.1
+﻿import QtQuick 1.1
 import com.nokia.symbian 1.1
 
 MyDialog {
@@ -12,7 +12,7 @@ MyDialog {
     property bool expImportFinished;
     property string expImportFinishedEndText;
 
-    titleText: expressImport?qsTr("Express import"):qsTr("Import")
+    titleText: expressImport?qsTr("快速导入"):qsTr("导入")
     closeAllowed: expressImport?false:true;
     privateCloseIcon: (!importOk) || (expressImport)
     onCloseButtonClicked: closeButtonClicked();
@@ -20,7 +20,7 @@ MyDialog {
     function closeButtonClicked()
     {
         if(dialog.expressImport){            
-            dialog.errorText = qsTr("Please, wait...");
+            dialog.errorText = qsTr("请耐心等待...");
             dialog.importOk = false;
             bookImporter.cancelImport();
         }

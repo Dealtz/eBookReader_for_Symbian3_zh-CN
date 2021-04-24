@@ -2,19 +2,15 @@
 &EN
 
 ; Package header
-#{"eBookReader"}, (0x200617AA), 1, 6, 0, TYPE=SA
+#{"eBookReader/epubÔÄ¶ÁÆ÷"}, (0x200617AA), 1, 6, 0, TYPE=SA
 
 ; Dependencies
 [0x20022E6D], 0, 0, 0, {"S60ProductID"}
 [0x20032DE7], 0, 0, 0, {"S60ProductID"}
-(0x2001E61C), 4, 7, 4, {"Qt"}
-(0x200346DE), 1, 1, 0, {"Qt Quick components for Symbian"}
-(0x200346DE), 1, 0, 0, {"Qt Quick components for Symbian"}
-(0x2002AC89), 1, 2, 0, {"QtMobility"}
 
 ; Vendor names
-%{"Oleg Diener"}
-:"Oleg Diener"
+%{"Oleg Diener @ by Fanxi"}
+:"Oleg Diener @ by Fanxi"
 
 "sys\bin\ebookreader.exe"-"!:\sys\bin\ebookreader.exe"
 "resource\apps\ebookreader.rsc"-"!:\resource\apps\ebookreader.rsc"
@@ -58,8 +54,5 @@
 "private\200617aa\qml\ebookreader\SelColors.qml"-"!:\private\200617aa\qml\ebookreader\SelColors.qml"
 "private\200617aa\qml\ebookreader\SelFontFamily.qml"-"!:\private\200617aa\qml\ebookreader\SelFontFamily.qml"
 "private\200617aa\qml\ebookreader\SelFontSize.qml"-"!:\private\200617aa\qml\ebookreader\SelFontSize.qml"
-"private\200617aa\data\ru\translation.qm"-"!:\private\200617aa\data\ru\translation.qm"
-"private\200617aa\qml\ru\AboutColumn.qml"-"!:\private\200617aa\qml\ru\AboutColumn.qml"
-"private\200617aa\qml\ru\HelpColumn.qml"-"!:\private\200617aa\qml\ru\HelpColumn.qml"
 
 

@@ -1,4 +1,4 @@
-import QtQuick 1.1
+﻿import QtQuick 1.1
 import com.nokia.symbian 1.1
 import MyLibrary 1.0
 import QtMobility.systeminfo 1.2
@@ -364,11 +364,11 @@ Page {
         id: copyMenu
         MenuLayout {
             MenuItem {
-                text: qsTr("Copy text")
+                text: qsTr("复制文字")
                 onClicked: browser.copySelection()
             }
             MenuItem {
-                text: qsTr("Cancel selection")
+                text: qsTr("取消选择")
                 onClicked: browser.cancelSelection()
             }
         }
@@ -378,33 +378,33 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: qsTr("Settings")                
+                text: qsTr("设置")                
                 onClicked: viewSettingsPage()
             }
             MenuItem {
-                text: qsTr("Screen orientation")
+                text: qsTr("屏幕方向")
                 platformSubItemIndicator: true
                 onClicked: screenMenu.open()
             }
             MenuItem {
-                text: qsTr("Display mode")
+                text: qsTr("显示模式")
                 platformSubItemIndicator: true
                 onClicked: colorsMenu.open()
             }
             MenuItem {
-                text: qsTr("Navigation")
+                text: qsTr("导航")
                 platformSubItemIndicator: true
                 onClicked: navigationMenu.open()
                 enabled: isOpened()
             }
             MenuItem {
-                text: qsTr("Bookmarks")
+                text: qsTr("书签")
                 platformSubItemIndicator: true
                 onClicked: bookmarkMenu.open()
                 enabled: isOpened()
             }
             MenuItem {
-                text: qsTr("Exit")
+                text: qsTr("退出")
                 onClicked: {
                     Qt.quit();
                 }
@@ -415,11 +415,11 @@ Page {
         id: screenMenu
         MenuLayout {
             MenuItem {
-                text: qsTr("Portrait")
+                text: qsTr("横屏")
                 onClicked: setPortrait()
             }
             MenuItem {
-                text: qsTr("Landscape")
+                text: qsTr("竖屏")
                 onClicked: setLandscape()
             }
         }
@@ -429,7 +429,7 @@ Page {
         MenuLayout {
             MenuItemWithCheck {
                 checked: fullScreen
-                text: qsTr("Full screen")
+                text: qsTr("全屏")
                 onClicked: {
                     checked = !checked;
                     setFullScreen();
@@ -437,18 +437,18 @@ Page {
             }
             MenuItemWithCheck {
                 checked: showStatusBar
-                text: qsTr("View title bar")
+                text: qsTr("查看标题栏")
                 onClicked: {
                     checked = !checked;
                     setShowStatusBar();
                 }
             }
             MenuItem {
-                text: qsTr("in the daylight")
+                text: qsTr("白天模式")
                 onClicked: setDayColors()
             }
             MenuItem {
-                text: qsTr("in the dark")
+                text: qsTr("夜晚模式")
                 onClicked: setDarkColors()
             }
         }
@@ -457,32 +457,32 @@ Page {
         id: navigationMenu
         MenuLayout {
             MenuItem {
-                text: qsTr("Index Page")
+                text: qsTr("目录页")
                 onClicked: viewIndexPage()
             }
             MenuItem {
-                text: qsTr("Goto page")
+                text: qsTr("转到页")
                 onClicked: viewGotoPage()
             }
             MenuItem {
-                text: qsTr("Goto bookmark")
+                text: qsTr("转到书签")
                 onClicked: viewBookmarkPage()
             }            
             MenuItem {
-                text: qsTr("First page")
+                text: qsTr("第一页")
                 onClicked: gotoPage(1)
             }
             MenuItem {
-                text: qsTr("Last page")
+                text: qsTr("最后一页")
                 onClicked: gotoPage(browser.pageCount)
             }
             MenuItem {
-                text: qsTr("Back")
+                text: qsTr("返回")
                 onClicked: browser.gotoLinkBackward()
                 enabled: hasLinkBackward
             }
             MenuItem {
-                text: qsTr("Forward")
+                text: qsTr("前一页")
                 onClicked: browser.gotoLinkForward()
                 enabled: hasLinkForward
             }
@@ -492,19 +492,19 @@ Page {
         id: bookmarkMenu
         MenuLayout {
             MenuItem {
-                text: qsTr("Add a bookmark on current page")
+                text: qsTr("当前页添加书签")
                 onClicked: browser.addBookmark()
             }
             MenuItem {
-                text: qsTr("Goto bookmark")
+                text: qsTr("转到书签")
                 onClicked: viewBookmarkPage()
             }
             MenuItem {
-                text: qsTr("Edit bookmarks")
+                text: qsTr("编辑书签")
                 onClicked: viewEditBookmarkPage()
             }
             MenuItem {
-                text: qsTr("Delete all bookmarks")
+                text: qsTr("删除所有书签")
                 onClicked: browser.deleteBookmarks()
             }
         }

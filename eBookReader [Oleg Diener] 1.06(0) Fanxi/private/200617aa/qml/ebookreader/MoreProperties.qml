@@ -1,4 +1,4 @@
-import QtQuick 1.1
+﻿import QtQuick 1.1
 import com.nokia.symbian 1.1
 import "options.js" as OPTIONS
 
@@ -41,18 +41,18 @@ Page {
     {
         id: langsModel
         ListElement{
-            modelData: "English"
+            modelData: "中文"
             type: "en"
         }
         ListElement{
-            modelData: "Русский"
+            modelData: "俄语"
             type: "ru"
         }
     }
 
     SelectionDialog {
         id: selectionDialog
-        titleText: qsTr("Select current language")
+        titleText: qsTr("选择当前语言")
         model: langsModel
         selectedIndex: getLangID();
     }
@@ -83,11 +83,11 @@ Page {
             id: ttLI
             mode: "normal"
             role: "Title"
-            text: "One line text"
+            text: "一行文本"
         }
         CheckBox{
             id: ttCB
-            text: "One line text"
+            text: "一行文本"
             anchors.topMargin: platformStyle.paddingMedium
         }
         BookText {
@@ -99,8 +99,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true            
-            text: qsTr("Warning: Only notes with a total length less than 600 characters"
-                                        +" can be displayed in popup window. Display of image is not possible, just a simple text.")
+            text: qsTr("警告：\n只有备注，总长度小于600个字符"
+                                        +"\n可以显示在弹出窗口，显示图像是不可能的\n只是一个简单的文本")
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -112,7 +112,7 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true            
-            text: qsTr("Info: Remove a source file (epub, fb2, zip) from the phone, when deleting a book.")
+            text: qsTr("信息:\n当删除一本书时\n从手机中删除源文件(EPUB，FB2，ZIP)")
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -124,8 +124,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true
-            text: qsTr("Info: You can accelerate express import, by excluding archives (zip) from the search."
-                       + " However, not all books can be imported. If you only read ePub files, uncheck this setting.")
+            text: qsTr("信息:\n可以加快快速导入\n但不包括从搜索到的归档文件(ZIP)"
+                       +"\n然而，并非所有的书都可以导入，如果你只是单一阅读ePub书籍文件\n建议您取消此设置")
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -137,7 +137,7 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true            
-            text: qsTr("Warning: For this change, eBookReader need restart.")
+            text: qsTr("警告：\n对于这一变化，本程序需要重新启动")
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         visible: false
@@ -188,11 +188,11 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("ePub options")
+                        text: qsTr("ePub选项")
                     }
                     CheckBox{
                         id: cbUseCSS
-                        text: qsTr("Use default style sheets")
+                        text: qsTr("使用默认")
                         anchors.topMargin: platformStyle.paddingMedium
                         checked: op_useEpubCssDefault
                         onClicked: {op_useEpubCssDefault = !op_useEpubCssDefault;}
@@ -210,11 +210,11 @@ Page {
                         id: titleItemText
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("FB2 options")
+                        text: qsTr("FB2选项")
                     }
                     CheckBox{
                         id: cbUsePopUp
-                        text: qsTr("Show notes in popup window")
+                        text: qsTr("在弹出的窗口显示笔记")
                         anchors.topMargin: platformStyle.paddingMedium
                         checked: op_showFB2NotesInPopUpMode
                         onClicked: {op_showFB2NotesInPopUpMode = !op_showFB2NotesInPopUpMode;}
@@ -241,11 +241,11 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Library options")
+                        text: qsTr("库选项")
                     }
                     CheckBox{
                         id: cbDeleteSourceFile
-                        text: qsTr("Delete a original file")
+                        text: qsTr("删除源文件")
                         anchors.topMargin: platformStyle.paddingMedium
                         checked: op_delSourceFile
                         onClicked: {op_delSourceFile = !op_delSourceFile;}
@@ -274,11 +274,11 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Express import")
+                        text: qsTr("快速导入")
                     }
                     CheckBox{
                         id: cbCheckZipFiles
-                        text: qsTr("Check zip files")
+                        text: qsTr("检查zip文件")
                         anchors.topMargin: platformStyle.paddingMedium
                         checked: op_checkZipFiles
                         onClicked: {op_checkZipFiles = !op_checkZipFiles;}
@@ -306,7 +306,7 @@ Page {
                     ListItemText {
                         mode: "normal"
                         role: "Title"
-                        text: qsTr("Language (UI)")
+                        text: qsTr("语言(用户界面)")
                     }
                     Rectangle{
                         anchors.topMargin: platformStyle.paddingMedium

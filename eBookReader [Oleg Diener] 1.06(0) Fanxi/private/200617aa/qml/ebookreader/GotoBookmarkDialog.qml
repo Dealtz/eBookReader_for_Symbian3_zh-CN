@@ -1,10 +1,10 @@
-import QtQuick 1.1
+﻿import QtQuick 1.1
 import com.nokia.symbian 1.1
 
 CommonDialog {
     id: root
     property int selectedIndex: -1
-    titleText: qsTr("Goto bookmark")
+    titleText: qsTr("转到书签")
     buttons: []
     privateCloseIcon: true
     height: parent.height
@@ -17,7 +17,7 @@ CommonDialog {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
                 visible: bookmarkModel.isEmpty
-                text: qsTr("No bookmarks")
+                text: qsTr("没有书签")
             }
 
         ListView {

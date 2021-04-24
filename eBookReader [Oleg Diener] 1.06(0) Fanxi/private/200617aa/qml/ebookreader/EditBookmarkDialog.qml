@@ -15,7 +15,7 @@ Page {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
         visible: bookmarkModel.isEmpty
-        text: qsTr("No bookmarks")
+        text: qsTr("没有书签")
     }
 
     CopyBookmarkModel{
@@ -37,7 +37,7 @@ Page {
 
     onStatusChanged: {
         if(status === PageStatus.Active){
-            statusBarText.text = qsTr("Bookmarks");
+            statusBarText.text = qsTr("书签");
             listView.focus = true;
         }
     }

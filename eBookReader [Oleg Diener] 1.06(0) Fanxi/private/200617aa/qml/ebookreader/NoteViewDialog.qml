@@ -1,4 +1,4 @@
-import QtQuick 1.1
+﻿import QtQuick 1.1
 import com.nokia.symbian 1.1
 
 CommonDialog {
@@ -14,7 +14,7 @@ CommonDialog {
         }
     }
 
-    titleText: qsTr("Note")
+    titleText: qsTr("注意")
     buttons: []
     privateCloseIcon: true
     height: parent.height
