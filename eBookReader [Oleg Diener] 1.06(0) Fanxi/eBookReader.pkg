@@ -1,0 +1,65 @@
+; Languages
+&EN
+
+; Package header
+#{"eBookReader"}, (0x200617AA), 1, 6, 0, TYPE=SA
+
+; Dependencies
+[0x20022E6D], 0, 0, 0, {"S60ProductID"}
+[0x20032DE7], 0, 0, 0, {"S60ProductID"}
+(0x2001E61C), 4, 7, 4, {"Qt"}
+(0x200346DE), 1, 1, 0, {"Qt Quick components for Symbian"}
+(0x200346DE), 1, 0, 0, {"Qt Quick components for Symbian"}
+(0x2002AC89), 1, 2, 0, {"QtMobility"}
+
+; Vendor names
+%{"Oleg Diener"}
+:"Oleg Diener"
+
+"sys\bin\ebookreader.exe"-"!:\sys\bin\ebookreader.exe"
+"resource\apps\ebookreader.rsc"-"!:\resource\apps\ebookreader.rsc"
+"resource\apps\ebookreader.mif"-"!:\resource\apps\ebookreader.mif"
+"private\10003a3f\import\apps\ebookreader_reg.rsc"-"!:\private\10003a3f\import\apps\ebookreader_reg.rsc"
+"private\200617aa\qml\ebookreader\AboutColumn.qml"-"!:\private\200617aa\qml\ebookreader\AboutColumn.qml"
+"private\200617aa\qml\ebookreader\AnnotationPage.qml"-"!:\private\200617aa\qml\ebookreader\AnnotationPage.qml"
+"private\200617aa\qml\ebookreader\BookItem.qml"-"!:\private\200617aa\qml\ebookreader\BookItem.qml"
+"private\200617aa\qml\ebookreader\BookmarkEditItem.qml"-"!:\private\200617aa\qml\ebookreader\BookmarkEditItem.qml"
+"private\200617aa\qml\ebookreader\BookText.qml"-"!:\private\200617aa\qml\ebookreader\BookText.qml"
+"private\200617aa\qml\ebookreader\ContentPage.qml"-"!:\private\200617aa\qml\ebookreader\ContentPage.qml"
+"private\200617aa\qml\ebookreader\CopyBookmarkModel.qml"-"!:\private\200617aa\qml\ebookreader\CopyBookmarkModel.qml"
+"private\200617aa\qml\ebookreader\DetailColumn.qml"-"!:\private\200617aa\qml\ebookreader\DetailColumn.qml"
+"private\200617aa\qml\ebookreader\DetailPage.qml"-"!:\private\200617aa\qml\ebookreader\DetailPage.qml"
+"private\200617aa\qml\ebookreader\EditBookmarkDialog.qml"-"!:\private\200617aa\qml\ebookreader\EditBookmarkDialog.qml"
+"private\200617aa\qml\ebookreader\GotoBookmarkDialog.qml"-"!:\private\200617aa\qml\ebookreader\GotoBookmarkDialog.qml"
+"private\200617aa\qml\ebookreader\GotoPageDialog.qml"-"!:\private\200617aa\qml\ebookreader\GotoPageDialog.qml"
+"private\200617aa\qml\ebookreader\GroupGridView.qml"-"!:\private\200617aa\qml\ebookreader\GroupGridView.qml"
+"private\200617aa\qml\ebookreader\GroupListView.qml"-"!:\private\200617aa\qml\ebookreader\GroupListView.qml"
+"private\200617aa\qml\ebookreader\GroupView.qml"-"!:\private\200617aa\qml\ebookreader\GroupView.qml"
+"private\200617aa\qml\ebookreader\HelpColumn.qml"-"!:\private\200617aa\qml\ebookreader\HelpColumn.qml"
+"private\200617aa\qml\ebookreader\HiddenToolbar.qml"-"!:\private\200617aa\qml\ebookreader\HiddenToolbar.qml"
+"private\200617aa\qml\ebookreader\ImportDialog.qml"-"!:\private\200617aa\qml\ebookreader\ImportDialog.qml"
+"private\200617aa\qml\ebookreader\ImportPage.qml"-"!:\private\200617aa\qml\ebookreader\ImportPage.qml"
+"private\200617aa\qml\ebookreader\IndexPageDialog.qml"-"!:\private\200617aa\qml\ebookreader\IndexPageDialog.qml"
+"private\200617aa\qml\ebookreader\InfoPage.qml"-"!:\private\200617aa\qml\ebookreader\InfoPage.qml"
+"private\200617aa\qml\ebookreader\LargeImagePage.qml"-"!:\private\200617aa\qml\ebookreader\LargeImagePage.qml"
+"private\200617aa\qml\ebookreader\LibraryPage.qml"-"!:\private\200617aa\qml\ebookreader\LibraryPage.qml"
+"private\200617aa\qml\ebookreader\main.qml"-"!:\private\200617aa\qml\ebookreader\main.qml"
+"private\200617aa\qml\ebookreader\MenuContent.qml"-"!:\private\200617aa\qml\ebookreader\MenuContent.qml"
+"private\200617aa\qml\ebookreader\MenuItemWithCheck.qml"-"!:\private\200617aa\qml\ebookreader\MenuItemWithCheck.qml"
+"private\200617aa\qml\ebookreader\MoreProperties.qml"-"!:\private\200617aa\qml\ebookreader\MoreProperties.qml"
+"private\200617aa\qml\ebookreader\MyDialog.qml"-"!:\private\200617aa\qml\ebookreader\MyDialog.qml"
+"private\200617aa\qml\ebookreader\MyPopupManager.qml"-"!:\private\200617aa\qml\ebookreader\MyPopupManager.qml"
+"private\200617aa\qml\ebookreader\MySelectionItem.qml"-"!:\private\200617aa\qml\ebookreader\MySelectionItem.qml"
+"private\200617aa\qml\ebookreader\NoteViewDialog.qml"-"!:\private\200617aa\qml\ebookreader\NoteViewDialog.qml"
+"private\200617aa\qml\ebookreader\options.js"-"!:\private\200617aa\qml\ebookreader\options.js"
+"private\200617aa\qml\ebookreader\Properties.qml"-"!:\private\200617aa\qml\ebookreader\Properties.qml"
+"private\200617aa\qml\ebookreader\SelCodec.qml"-"!:\private\200617aa\qml\ebookreader\SelCodec.qml"
+"private\200617aa\qml\ebookreader\SelColor.qml"-"!:\private\200617aa\qml\ebookreader\SelColor.qml"
+"private\200617aa\qml\ebookreader\SelColors.qml"-"!:\private\200617aa\qml\ebookreader\SelColors.qml"
+"private\200617aa\qml\ebookreader\SelFontFamily.qml"-"!:\private\200617aa\qml\ebookreader\SelFontFamily.qml"
+"private\200617aa\qml\ebookreader\SelFontSize.qml"-"!:\private\200617aa\qml\ebookreader\SelFontSize.qml"
+"private\200617aa\data\ru\translation.qm"-"!:\private\200617aa\data\ru\translation.qm"
+"private\200617aa\qml\ru\AboutColumn.qml"-"!:\private\200617aa\qml\ru\AboutColumn.qml"
+"private\200617aa\qml\ru\HelpColumn.qml"-"!:\private\200617aa\qml\ru\HelpColumn.qml"
+
+
