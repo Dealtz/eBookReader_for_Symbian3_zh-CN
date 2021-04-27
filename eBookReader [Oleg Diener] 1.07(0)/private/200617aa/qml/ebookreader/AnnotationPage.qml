@@ -12,7 +12,7 @@ Page {
 
     onStatusChanged: {
         if(status === PageStatus.Active)
-            statusBarText.text = "查看简介";
+            statusBarText.text = "简介";
     }
 
     tools: ToolBarLayout {

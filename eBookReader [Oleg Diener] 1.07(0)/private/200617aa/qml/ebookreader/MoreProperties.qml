@@ -41,11 +41,11 @@ Page {
     {
         id: langsModel
         ListElement{
-            modelData: "中文"
+            modelData: "中文(含部分英文)"
             type: "en"
         }
         ListElement{
-            modelData: "中文"
+            modelData: "中文(完全翻译)"
             type: "ru"
         }
     }
@@ -99,8 +99,8 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true            
-            text: "警告: 只记录总长度小于600字符的文段。"
-                                        +" 可以显示在弹窗中，但图片无法显示，只显示一个简单的文本。"
+            text: "警告: 只有总长度小于600字符的Notes"
+                                        +"可以显示在弹窗中。无法显示图片，只能显示简单文本。"
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -125,7 +125,7 @@ Page {
             horizontalAlignment: Text.AlignJustify
             clip: true
             text: "提示: 你可以排除压缩(zip)文件来加速快速添加。"
-                       + " 然而, 并不是所有的书籍都能添加，如果你只阅读ePub电子书,可以取消选中此选项。"
+                       + "然而，并不是所有的书籍都能添加。如果你只阅读ePub电子书，可以取消选中此选项。"
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         BookText {
@@ -137,7 +137,7 @@ Page {
             }
             horizontalAlignment: Text.AlignJustify
             clip: true            
-            text: "警告: 设置将在重启eBookReader后生效。"
+            text: "警告: 语言改变将在重启eBookReader后生效。"
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         }
         visible: false

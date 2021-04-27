@@ -248,7 +248,7 @@ Page {
                     }
                     CheckBox{
                         id: fontstyle
-                        text: "使用粗体风格"
+                        text: "使用粗体"
                         anchors.topMargin: platformStyle.paddingMedium
                         checked: op_textBold
                         onClicked: {op_textBold = !op_textBold;}

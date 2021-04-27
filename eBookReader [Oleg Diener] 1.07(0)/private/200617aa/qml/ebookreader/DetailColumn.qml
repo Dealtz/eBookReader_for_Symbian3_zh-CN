@@ -76,7 +76,7 @@ Column {
     }
 
     BookText {
-        text: "文件名: " + bookEntry.fileName
+        text: "文件路径: " + bookEntry.fileName
         width: parent.width
         clip: true
         elide: Text.ElideMiddle

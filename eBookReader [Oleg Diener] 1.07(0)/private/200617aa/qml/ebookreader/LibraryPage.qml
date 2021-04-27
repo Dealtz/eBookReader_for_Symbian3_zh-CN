@@ -274,7 +274,7 @@ Page {
                 }
             }
             MenuItem {
-                text: "取消所有分组"
+                text: "取消分组"
                 onClicked: cancelGrouping()
             }
         }
@@ -294,7 +294,7 @@ Page {
                 onClicked: viewSettingsPage()
             }
             MenuItem {
-                text: "分组浏览"
+                text: "书籍分组"
                 platformSubItemIndicator: true
                 onClicked: groupingMenu.open()
             }
@@ -321,11 +321,11 @@ Page {
         // define the items in the menu and corresponding actions
         content: MenuLayout {
             MenuItem {
-                text: "选择读完的书"
+                text: "选择已读完的书籍"
                 onClicked: bookModel.selectFinishedBooks()
             }
             MenuItem {
-                text: "删除所选书籍"
+                text: "删除已选择的书籍"
                 onClicked: deleteSelected();
             }
             MenuItem {
@@ -333,7 +333,7 @@ Page {
                 onClicked: bookModel.clearSelection()
             }
             MenuItem {
-                text: "分组浏览"
+                text: "书籍分组"
                 onClicked: groupingMenu.open()
             }
             MenuItem {

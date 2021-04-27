@@ -26,7 +26,6 @@ Page {
             anchors.bottomMargin: 4
             font.bold: true
             color: "white"
-            z:5
         }
     }
     //![0]

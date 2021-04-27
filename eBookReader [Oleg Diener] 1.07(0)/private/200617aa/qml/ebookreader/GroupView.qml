@@ -67,7 +67,7 @@ Page {
         if(status === PageStatus.Active){
             listView.focus = true;
             window.state = "";
-            statusBarText.text = "分组查看";
+            statusBarText.text = "组别";
         }
     }
     onFocusChanged: {

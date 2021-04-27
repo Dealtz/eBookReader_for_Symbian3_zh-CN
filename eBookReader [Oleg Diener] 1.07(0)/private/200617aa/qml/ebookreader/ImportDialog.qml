@@ -12,7 +12,7 @@ MyDialog {
     property bool expImportFinished;
     property string expImportFinishedEndText;
 
-    titleText: expressImport?"快速添加":"添加书籍"
+    titleText: expressImport?"快速添加":"添加文件"
     closeAllowed: expressImport?false:true;
     privateCloseIcon: (!importOk) || (expressImport)
     onCloseButtonClicked: closeButtonClicked();
