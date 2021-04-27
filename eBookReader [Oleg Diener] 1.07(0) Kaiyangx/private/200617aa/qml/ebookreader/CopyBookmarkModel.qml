@@ -8,9 +8,9 @@ ListModel {
     {
         clear();
         for(var i = 0; i < bookmarkModel.myCount(); ++i){
-            append({"名称": bookmarkModel.getBookmarkName(i),
+            append({"name": bookmarkModel.getBookmarkName(i),
                        "uid": bookmarkModel.getUID(i),
-                       "删除": false
+                       "deleted": false
                    });
         }        
     }

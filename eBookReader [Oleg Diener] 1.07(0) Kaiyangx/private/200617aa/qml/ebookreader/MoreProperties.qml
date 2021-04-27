@@ -41,11 +41,11 @@ Page {
     {
         id: langsModel
         ListElement{
-            modelData: "中文"
+            modelData: "中文(含部分英文)"
             type: "en"
         }
         ListElement{
-            modelData: "中文"
+            modelData: "中文(完全翻译)"
             type: "ru"
         }
     }

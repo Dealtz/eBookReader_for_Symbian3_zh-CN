@@ -33,7 +33,7 @@ CommonDialog {
                 }                
                 ListItemText {
                     anchors.verticalCenter: parent.paddingItem.verticalCenter
-                    role: "Sub Title"
+                    role: "SubTitle"
                     text: "  " + bookmarkId + ". " + name
                     clip: true
                     width: parent.paddingItem.width

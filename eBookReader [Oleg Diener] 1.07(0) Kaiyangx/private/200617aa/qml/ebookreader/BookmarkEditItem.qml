@@ -37,7 +37,7 @@ ListItem {
                     text1.text = "";
                     text1.placeholderText = "删除书签";
                 }
-                copyBookmarkModel.setProperty(index, "delete", !text1.enabled);
+                copyBookmarkModel.setProperty(index, "deleted", !text1.enabled);
                 text1.forceActiveFocus();
             }
             anchors { verticalCenter: parent.verticalCenter; }

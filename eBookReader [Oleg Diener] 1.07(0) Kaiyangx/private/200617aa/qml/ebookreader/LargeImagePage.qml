@@ -11,6 +11,7 @@ Page {
     property int photoHeight
     property int photoWidth
 
+    //![0]
     ProgressBar {
         anchors.centerIn: parent
         minimumValue: 1
@@ -18,7 +19,6 @@ Page {
         value: image.progress * 100
         visible: image.status != Image.Ready
 
-    //![0]
         Text {
             text: Math.floor(parent.value) + " %"
             anchors.horizontalCenter: parent.horizontalCenter
@@ -26,10 +26,10 @@ Page {
             anchors.bottomMargin: 4
             font.bold: true
             color: "white"
-            z:5
         }
     }
     //![0]
+
     Flickable {
         id: flickable
 
